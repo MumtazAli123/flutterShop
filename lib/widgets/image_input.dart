@@ -40,7 +40,7 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
                   _imageFile!,
                   fit: BoxFit.cover,
                 )
-              : const Text('No Image Yet'),
+              :  Image.network(urlImage),
         )
       ],
     );
