@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: GlobalVaraible.backgroundColor,
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       onGenerateRoute: ((settings) => genrateRoute(settings)),
-      home: const AuthScreen(),
+      home: const MyHomeScreen(),
     );
   }
 }

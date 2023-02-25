@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/widgets/custom_button.dart';
@@ -45,7 +44,10 @@ class _AuthScreenState extends State<AuthScreen> {
 
   _buildAppBar() {
     return AppBar(
-      title: const Text('Auth Screen'),
+      forceMaterialTransparency: false,
+      // backgroundColor: Colors.transparent,
+      centerTitle: true,
+      title: const Text('Welcome'),
     );
   }
 
@@ -56,7 +58,6 @@ class _AuthScreenState extends State<AuthScreen> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const Text('Welcome'),
             _buildAccount(),
             const SizedBox(
               height: 20,
@@ -148,7 +149,7 @@ class _AuthScreenState extends State<AuthScreen> {
             const SizedBox(
               height: 20,
             ),
-            CustomButton(text: 'Register', icon: Icons.person, onTap: () {}),
+            CustomButton(text: 'Login', icon: Icons.person, onTap: () {}),
           ],
         ));
   }
