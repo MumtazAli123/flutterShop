@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
+import 'package:nodejs/screens/home/post_screen.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -14,6 +15,12 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     return Scaffold(
       appBar: _buildAppBar(),
       body: _buildBody(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.pushNamed(context, "/post");
+        },
+        backgroundColor: Colors.orange, child: const Icon(Icons.image),
+      ), 
     );
   }
 
@@ -25,6 +32,11 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
         "Home ",
         style: TextStyle(color: Colors.white),
       ),
+      actions: [
+        IconButton(onPressed: (){
+          Navigator.pushNamed(context, AuthScreen.routeName);
+        }, icon: const Icon(Icons.person))
+      ],
     );
   }
 

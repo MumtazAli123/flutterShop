@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
+import 'package:nodejs/screens/home/home.dart';
+import 'package:nodejs/screens/home/post_screen.dart';
 
-Route<dynamic> genrateRoute(RouteSettings routeSettings) {
+Route<dynamic> ganrateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
+    case ("/"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const MyHomeScreen());
     case AuthScreen.routeName:
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const AuthScreen());
+    case ("/post"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const MyPostScreen());
 
     default:
       return MaterialPageRoute(

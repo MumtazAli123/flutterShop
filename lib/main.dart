@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
         useMaterial3: false,
       ),
-      onGenerateRoute: ((settings) => genrateRoute(settings)),
+      onGenerateRoute: ((settings) => ganrateRoute(settings)),
       home: const MyHomeScreen(),
     );
   }
