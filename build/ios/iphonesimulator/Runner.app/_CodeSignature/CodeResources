@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		WXd7xWF8RBPkAKDxHzpi72DYI40=
+		wy+rJBLQaBqTyAOC/skNiIntLFM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Tgvk+XoyINRd4BmzJJ8diOaIXYQ=
+		VSmJj16DOadqzjDSviF7ma79mTU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		WtU75aGBvh5/YP1lNl5wV7L0oo0=
+		upE8gOzTYSpAvi6M5wZNDJKVkwc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		jEdTbm4I6i2hgWPnx5MQMnv9230=
+		h56EFBM1j+6MlrWbfm1qSVyeXMM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -180,9 +180,33 @@
 		<data>
 		iqxdhxDOeG6GKBcMhgGCL00SLGw=
 		</data>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<data>
+		GyPdgoYNtCVhVi8MzW1tHASPjL8=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cYA6aBujzCnQZyyA+FNI9CAmuCQ=
+		</data>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<data>
+		CnmzXQFvt/NbPab7WdFQBz8tv/4=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
+		<data>
+		5NtJO1CHqE6JBfmdQYEIjfBz6d0=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		0UOUHPORcI79PYGqASB0kxWfeF4=
+		</data>
+		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
+		<data>
+		oJ9L+NZGH0JWw+KrvNjIXPL6pxg=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		BXV4L5N7Cnj2Wo5FK4c3V7QVDeM=
+		jvWawYh9v+GgEB+8S74f8tNaee4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -265,7 +289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlm+YegAgnhf6WygVKFW5rw7etoerdNEqmWXsB6xkRI=
+			shEC02RpnzUwfY50zjQHfzKHy7tp/B6L0xxmL8+bcio=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -279,7 +303,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nAQCoDEeaaVLMkVLnHi1EoCKQOx4pEEFwn1L7GSEw5I=
+			qK02T1KbP8hvadcIOE3631CZ2Fw/ML92Bms4G2AL5qM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -307,7 +331,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wswg93cjysNNS8iGVsoad71hJDFd2YrK5T57HeRNGWs=
+			XAvzsPzuzY5khBilSh2+4PfZmGDtGGPiqZv9DHJ7QRs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -328,7 +352,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEaw8N00q8XPY7TNSWlWT9EUQFhr5n0xyzCiatLZF3w=
+			3iy6Ar+TrgfwfrlSZgFR8jYH6CziwHXWOON37pm5nbs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -497,6 +521,48 @@
 			<key>hash2</key>
 			<data>
 			d80FTlJMKYsTn7JmRt/E1O9oOh+k9tF0xR10Q3ZrKn4=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M2peswQckH9wbXJc8pwFxnkrX2rDgLTPqSDBGv1RHgk=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2SseV2r7Y6TsFmvhnWI9y+niLGPUCvisRYZI6YNeDyw=
+			</data>
+		</dict>
+		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rCwl8eYrkQjtMiagGhWUcyLh4544EE5dr/wcKxbbE1s=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CqTT4Nk/ee3LyZmSfuzyNmScYuWsacoGi2s+tdI2Nww=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/bowL0A+s49VAI+78++i6qRKVLiMcQMZAQZwHNUAU8A=
+			</data>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ClIVHZ26cfn3Ha3iak+tGZeo6415hAcrUNA0mJAJUNI=
 			</data>
 		</dict>
 	</dict>

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nodejs/api/router.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/screens/home/home.dart';
+import 'package:provider/provider.dart';
+import 'models/classes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,18 +15,21 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: GlobalVaraible.secondaryColor,
-        scaffoldBackgroundColor: GlobalVaraible.backgroundColor,
-        primarySwatch: Colors.blue,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-        useMaterial3: false,
+    return  ChangeNotifierProvider(
+      create: (BuildContext context) => ImageFile(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primaryColor: GlobalVaraible.secondaryColor,
+          scaffoldBackgroundColor: GlobalVaraible.backgroundColor,
+          primarySwatch: Colors.blue,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
+          useMaterial3: false,
+        ),
+        onGenerateRoute: ((settings) => ganrateRoute(settings)),
+        home: const MyHomeScreen(),
       ),
-      onGenerateRoute: ((settings) => ganrateRoute(settings)),
-      home: const MyHomeScreen(),
     );
   }
 }
