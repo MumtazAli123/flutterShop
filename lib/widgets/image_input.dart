@@ -2,9 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import 'package:path/path.dart' as path;
+import 'package:path_provider/path_provider.dart' as syspath;
 
 class ImageInputScreen extends StatefulWidget {
-  const ImageInputScreen({Key? key}) : super(key: key);
+  final Function imageSaveAt;
+  const ImageInputScreen(this.imageSaveAt, {super.key});
 
   @override
   State<ImageInputScreen> createState() => _ImageInputScreenState();
@@ -17,13 +20,20 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
   late Uint8List memoryImage;
 
   Future getImage(ImageSource source) async {
-    final image = await ImagePicker().pickImage(source: source);
+    final image = await ImagePicker().pickImage(source: source, maxWidth: 600);
     if (image == null) return;
     final imageTemporary = File(image.path);
     setState(() {
       _imageFile = imageTemporary;
     });
+    final apDir = syspath.getApplicationDocumentsDirectory();
+    final saveImagePath = await _imageFile?.copy('$apDir/$imageTemporary');
+    widget.imageSaveAt(saveImagePath);
+
+
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +50,18 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
                   _imageFile!,
                   fit: BoxFit.cover,
                 )
-              :  Image.network(urlImage),
-        )
+              :  Image.network(urlImage, fit: BoxFit.cover,),
+        ),
+        Column(
+          children: [
+            TextButton.icon(onPressed: (){
+              getImage(ImageSource.gallery);
+            }, icon: const Icon(Icons.image), label: const Text('Add your image')),
+            TextButton.icon(onPressed: (){
+              getImage(ImageSource.camera);
+            }, icon: const Icon(Icons.camera_alt), label: const Text('Take  image')),
+          ],
+        ),
       ],
     );
   }
