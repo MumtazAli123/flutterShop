@@ -24,14 +24,6 @@
 		<data>
 		upE8gOzTYSpAvi6M5wZNDJKVkwc=
 		</data>
-		<key>flutter_assets/assets/images/Vegetable%20.jpg</key>
-		<data>
-		JSmlZLhyFJXH57GZpMdCh1UNKJg=
-		</data>
-		<key>flutter_assets/assets/images/logo.jpg</key>
-		<data>
-		ezVop5oeYVh2WUttk/JOIZB1jY4=
-		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -42,7 +34,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		R6DYtppYccVjONSimczujuheUws=
+		LnTFK4l5oXkJgLOeHrdq0QHje/U=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -87,20 +79,6 @@
 			XAvzsPzuzY5khBilSh2+4PfZmGDtGGPiqZv9DHJ7QRs=
 			</data>
 		</dict>
-		<key>flutter_assets/assets/images/Vegetable%20.jpg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			i17SoR3xMG0p6aFBGjfJ7PDKURvVpzEThl7ZzRGYZjs=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/images/logo.jpg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eeKzRlvfyXypqYkahfWlNHIDnOaO/UBcy1ENiGnFBtw=
-			</data>
-		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -119,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kYj9eOPP+8eqOfItPd8wPNtafwwVaoYU/+m6oTGObpQ=
+			3Yj5X7dXY1i8oISKvsBdb6rOYkU2TveFEoaLMrm3L2Q=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

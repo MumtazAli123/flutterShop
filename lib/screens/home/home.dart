@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
-import 'package:nodejs/screens/home/post_screen.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -41,13 +40,9 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   _buildBody() {
-    return Center(
-      child: ElevatedButton(
-        onPressed: () {
-          Navigator.pushNamed(context, AuthScreen.routeName);
-        },
-        child: const Text('click'),
-      ),
-    );
+    return const Text('Hello');
+
+
+
   }
 }

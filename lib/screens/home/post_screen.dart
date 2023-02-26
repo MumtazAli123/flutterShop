@@ -1,8 +1,11 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:nodejs/models/classes.dart';
 import 'package:nodejs/widgets/image_input.dart';
 import 'package:nodejs/widgets/input_widget.dart';
 import 'dart:io';
+import 'package:provider/provider.dart';
+
+
 
 
 class MyPostScreen extends StatefulWidget {
@@ -14,12 +17,23 @@ class MyPostScreen extends StatefulWidget {
 }
 
 class _MyPostScreenState extends State<MyPostScreen> {
-  late File savedImage;
+   File? savedImage;
   final _titleController = TextEditingController();
   final _desController = TextEditingController();
 
   void savedImages (File image){
     savedImage = image;
+  }
+
+  void onSave(){
+    if (_titleController.text.isEmpty|| _desController.text.isEmpty || savedImage==null){
+      return;
+    }
+    else {
+      Provider.of<ImageFile>(context, listen: false).addImagePlace(
+          _titleController.text, _desController.text, savedImage!);
+    }
+
   }
   @override
   Widget build(BuildContext context) {
@@ -31,7 +45,7 @@ class _MyPostScreenState extends State<MyPostScreen> {
 
   _buildAppBar(){
     return AppBar(
-      actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.add))],
+      actions: [IconButton(onPressed: onSave, icon: const Icon(Icons.add))],
       centerTitle: true,
       // backgroundColor: Colors.transparent,
       elevation: 0,
