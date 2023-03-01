@@ -20,6 +20,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "awesome_dialog",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/awesome_dialog-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -114,6 +120,12 @@
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/googleapis-9.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "graphs",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/graphs-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "http",
@@ -260,6 +272,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "rive",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/rive-0.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -350,7 +368,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-03-01T12:40:48.798650Z",
+  "generated": "2023-03-01T13:38:28.011538Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-218.1.beta"
 }

@@ -1,6 +1,7 @@
 
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -33,6 +34,21 @@ class Utils {
             color: Colors.white,
           ),
         )..show(context));
+  }
+
+  static popupAwesome (BuildContext context){
+    return AwesomeDialog(
+      context: context,
+      animType: AnimType.scale,
+      dialogType: DialogType.info,
+      body: const Center(child: Text(
+        'If the body is specified, then title and description will be ignored, this allows to 											further customize the dialogue.',
+        style: TextStyle(fontStyle: FontStyle.italic),
+      ),),
+      title: 'This is Ignored',
+      desc:   'This is also Ignored',
+      btnOkOnPress: () {},
+    )..show();
   }
 
 

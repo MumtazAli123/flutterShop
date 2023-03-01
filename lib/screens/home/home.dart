@@ -57,6 +57,14 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:  SizedBox(
+        width: 200, height: 50,
+        child:  ElevatedButton(
+          onPressed: (){
+            Utils.popupAwesome(context);
+          }, child: const Text('add'),
+        ),
+      ),
       appBar: _buildAppBar(),
       body: _buildBody(),
       floatingActionButton: FloatingActionButton(
@@ -66,6 +74,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
         backgroundColor: Colors.orange,
         child: const Icon(Icons.image),
       ),
+
     );
   }
 
@@ -89,7 +98,14 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
 
   _buildBody() {
     return Center(
-      child: SizedBox(width: 300, height: 300, child: Image.network(urlImage)),
+      child: Column(
+        children: [
+          SizedBox(width: 300, height: 300, child: Image.network(urlImage)),
+         ElevatedButton(onPressed: (){
+           Utils.popupAwesome(context);
+         }, child: const Text('pick'))
+        ],
+      )
     );
   }
 }
