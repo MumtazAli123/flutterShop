@@ -620,7 +620,7 @@
             "outputFile": "com.example.nodejs.app-merged_res-12:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/sindhi/Desktop/nodejs/flutterShop/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/sindhi/Desktop/nodejs/nodejs/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -1008,7 +1008,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sindhi/Desktop/nodejs/flutterShop/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/sindhi/Desktop/nodejs/nodejs/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
