@@ -36,17 +36,12 @@ class Utils {
         )..show(context));
   }
 
-  static popupAwesome (BuildContext context){
+  static popupAwesome (BuildContext context, body){
     return AwesomeDialog(
       context: context,
       animType: AnimType.scale,
       dialogType: DialogType.info,
-      body: const Center(child: Text(
-        'If the body is specified, then title and description will be ignored, this allows to 											further customize the dialogue.',
-        style: TextStyle(fontStyle: FontStyle.italic),
-      ),),
-      title: 'This is Ignored',
-      desc:   'This is also Ignored',
+      body: body,
       btnOkOnPress: () {},
     )..show();
   }

@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteDatabase.m \
+  /Users/sindhi/Desktop/nodejs/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/sqflite.build/module.modulemap \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/Target\ Support\ Files/sqflite/sqflite-prefix.pch \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteDatabase.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteCursor.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteOperation.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteImport.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Modules/module.modulemap \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterViewController.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterTexture.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterPluginMacOS.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterPlatformViews.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterPluginRegistrarMacOS.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterEngine.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterDartProject.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterCodecs.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterChannels.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacros.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterAppDelegate.h \
+  /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacOS.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqflitePlugin.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteFmdbImport.m \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMDB.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FMDB.build/module.modulemap \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMDatabaseQueue.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMDatabasePool.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMResultSet.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/FMDB/src/fmdb/FMDatabase.h \
+  /Users/sindhi/Desktop/nodejs/nodejs/macos/Pods/Target\ Support\ Files/FMDB/FMDB-umbrella.h

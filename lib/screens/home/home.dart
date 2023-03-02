@@ -1,9 +1,14 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
 import 'package:nodejs/models/classes.dart' as ima;
 import 'package:nodejs/sqlflite/sql_helper.dart';
 import 'package:nodejs/utils/utils.dart';
+import 'package:nodejs/widgets/input_widget.dart';
+import 'package:provider/provider.dart';
+
+import '../../models/classes.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -15,14 +20,30 @@ class MyHomeScreen extends StatefulWidget {
 class _MyHomeScreenState extends State<MyHomeScreen> {
   List<Map<String, dynamic>> _journals = [];
   bool _isLoading = true;
+  File? savedImage;
   final ImagePicker _pickerController = ImagePicker();
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _desController = TextEditingController();
   final urlImage =
       "https://www.collinsdictionary.com/images/full/apple_158989157.jpg";
 
+  void savedImages (File image){
+    savedImage = image;
+  }
+
+  void onSave(){
+    if (_titleController.text.isEmpty|| _desController.text.isEmpty || savedImage==null){
+      return;
+    }
+    else {
+      Provider.of<ImageFile>(context, listen: false).addImagePlace(
+          _titleController.text, _desController.text, savedImage!);
+    }
+  }
+
   Future<void> _addItem(ImageSource source) async {
     await SQLHelper.creatItem(_titleController.text, _desController.text,
+
         _pickerController.pickImage(source: source) as String);
     _refreshJournals();
     print(".. Number of items ${_journals.length} ");
@@ -47,6 +68,23 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
 
   }
 
+  void _showForm (int ? id, ImageSource source) async {
+    if (id != null){
+      final existingJournal =
+          _journals.firstWhere((element) => element['id']== id);
+      _titleController.text = existingJournal['title'];
+      _desController.text = existingJournal['des'];
+      savedImage = existingJournal['picImage'];
+    }
+    Utils.popupAwesome(context,  Column(
+      children: [
+        CustomTextField(
+            controller: _titleController, hintText: 'Title'),
+      ],
+    ));
+  }
+
+
   @override
   void initState() {
     super.initState();
@@ -60,9 +98,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
       bottomNavigationBar:  SizedBox(
         width: 200, height: 50,
         child:  ElevatedButton(
-          onPressed: (){
-            Utils.popupAwesome(context);
-          }, child: const Text('add'),
+          onPressed: ()=> _showForm(null, ImageSource.gallery), child: const Text('add'),
         ),
       ),
       appBar: _buildAppBar(),
@@ -100,9 +136,8 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     return Center(
       child: Column(
         children: [
-          SizedBox(width: 300, height: 300, child: Image.network(urlImage)),
          ElevatedButton(onPressed: (){
-           Utils.popupAwesome(context);
+           savedImage;
          }, child: const Text('pick'))
         ],
       )

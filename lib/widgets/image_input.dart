@@ -29,10 +29,7 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
     final apDir = syspath.getApplicationDocumentsDirectory();
     final saveImagePath = await _imageFile?.copy('$apDir/$imageTemporary');
     widget.imageSaveAt(saveImagePath);
-
-
   }
-
 
 
   @override
