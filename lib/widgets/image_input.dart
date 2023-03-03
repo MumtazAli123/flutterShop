@@ -31,13 +31,12 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
     widget.imageSaveAt(saveImagePath);
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Container(
-          width: 200,
+          width: 150,
           height: 200,
           decoration:
               BoxDecoration(border: Border.all(width: 2, color: Colors.orange)),
@@ -50,13 +49,15 @@ class _ImageInputScreenState extends State<ImageInputScreen> {
               :  Image.network(urlImage, fit: BoxFit.cover,),
         ),
         Column(
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TextButton.icon(onPressed: (){
               getImage(ImageSource.gallery);
-            }, icon: const Icon(Icons.image), label: const Text('Add your image')),
+            }, icon: const Icon(Icons.image), label: const Text('Add image')),
             TextButton.icon(onPressed: (){
               getImage(ImageSource.camera);
-            }, icon: const Icon(Icons.camera_alt), label: const Text('Take  image')),
+            }, icon: const Icon(Icons.camera_alt), label: const Text('Take image')),
           ],
         ),
       ],

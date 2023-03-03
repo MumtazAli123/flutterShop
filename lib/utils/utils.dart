@@ -36,14 +36,15 @@ class Utils {
         )..show(context));
   }
 
-  static popupAwesome (BuildContext context, body){
+  static popupAwesome (BuildContext context, body,  onTap){
     return AwesomeDialog(
       context: context,
       animType: AnimType.scale,
       dialogType: DialogType.info,
       body: body,
-      btnOkOnPress: () {},
+      btnOkOnPress: onTap,
     )..show();
+
   }
 
 

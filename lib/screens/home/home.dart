@@ -1,14 +1,14 @@
-import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:nodejs/features/auth/auth_screen.dart';
-import 'package:nodejs/models/classes.dart' as ima;
-import 'package:nodejs/sqlflite/sql_helper.dart';
-import 'package:nodejs/utils/utils.dart';
+import 'package:nodejs/constants/list_tile.dart';
 import 'package:nodejs/widgets/input_widget.dart';
+import 'dart:io';
 import 'package:provider/provider.dart';
-
-import '../../models/classes.dart';
+import '../../api/data/expensive_data.dart';
+import '../../features/auth/auth_screen.dart';
+import '../../models/expense_model.dart';
+import '../../sqlflite/sql_helper.dart';
+import '../../utils/utils.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key}) : super(key: key);
@@ -18,36 +18,14 @@ class MyHomeScreen extends StatefulWidget {
 }
 
 class _MyHomeScreenState extends State<MyHomeScreen> {
-  List<Map<String, dynamic>> _journals = [];
   bool _isLoading = true;
-  File? savedImage;
-  final ImagePicker _pickerController = ImagePicker();
+  // final ImagePicker _pickerController = ImagePicker();
   final TextEditingController _titleController = TextEditingController();
-  final TextEditingController _desController = TextEditingController();
+  final TextEditingController _priceController = TextEditingController();
+  List<Map<String, dynamic>> _journals = [];
+  final color = Colors.red;
   final urlImage =
-      "https://www.collinsdictionary.com/images/full/apple_158989157.jpg";
-
-  void savedImages (File image){
-    savedImage = image;
-  }
-
-  void onSave(){
-    if (_titleController.text.isEmpty|| _desController.text.isEmpty || savedImage==null){
-      return;
-    }
-    else {
-      Provider.of<ImageFile>(context, listen: false).addImagePlace(
-          _titleController.text, _desController.text, savedImage!);
-    }
-  }
-
-  Future<void> _addItem(ImageSource source) async {
-    await SQLHelper.creatItem(_titleController.text, _desController.text,
-
-        _pickerController.pickImage(source: source) as String);
-    _refreshJournals();
-    print(".. Number of items ${_journals.length} ");
-  }
+      "https://miro.medium.com/max/1000/1*JbDo7U0l62vYMfm1WxnA1g.png";
 
   void _refreshJournals() async {
     final data = await SQLHelper.getItems();
@@ -57,60 +35,96 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     });
   }
 
-  Future <void> _updateItem (int id, ImageSource source)async{
-    await SQLHelper.updateItem(
-        id, _titleController.text,
-        _desController.text, _pickerController.pickImage(source: source) as String);
-  }
-
-  Future <void> _deleteItem (int id,) async{
+  Future<void> _deleteItem(
+    int id,
+  ) async {
     Utils.snackBar1('message', context);
-
   }
-
-  void _showForm (int ? id, ImageSource source) async {
-    if (id != null){
-      final existingJournal =
-          _journals.firstWhere((element) => element['id']== id);
-      _titleController.text = existingJournal['title'];
-      _desController.text = existingJournal['des'];
-      savedImage = existingJournal['picImage'];
-    }
-    Utils.popupAwesome(context,  Column(
-      children: [
-        CustomTextField(
-            controller: _titleController, hintText: 'Title'),
-      ],
-    ));
-  }
-
 
   @override
   void initState() {
     super.initState();
     _refreshJournals();
-    print(".. Number of items ${_journals.length} ");
+    if (kDebugMode) {
+      print(".. Number of items ${_journals.length} ");
+    }
+  }
+
+  void onSave() {
+    ExpensiveItem newExpense = ExpensiveItem(
+        title: _titleController.text,
+        amount: _priceController.text,
+        dateTime: DateTime.now());
+    Provider.of<ExpensiveData>(context, listen: false)
+        .addNewExpensive(newExpense);
+    clear();
+
+  }
+  void clear (){
+    _titleController.clear();
+    _priceController.clear();
+  }
+
+  void addNewExpensive() {
+    Utils.popupAwesome(
+      context,
+      Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const SizedBox(
+            height: 10,
+          ),
+          const Text('Add new Expense'),
+          const SizedBox(
+            height: 10,
+          ),
+          CustomTextField(controller: _titleController, hintText: 'Title'),
+          const SizedBox(
+            height: 10,
+          ),
+          CustomTextField(controller: _priceController, hintText: 'Price')
+        ],
+      ),
+      () => onSave(),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:  SizedBox(
-        width: 200, height: 50,
-        child:  ElevatedButton(
-          onPressed: ()=> _showForm(null, ImageSource.gallery), child: const Text('add'),
+      body: _buildBody(),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(bottom: 20.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: 150,
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.pushNamed(context, '/wallet'),
+                label: const Text('Wallet'),
+                icon: const Icon(Icons.wallet),
+              ),
+            ),
+            SizedBox(
+              width: 150,
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.pushNamed(context, '/post'),
+                label: const Text('Add'),
+                icon: const Icon(Icons.add),
+              ),
+            ),
+          ],
         ),
       ),
       appBar: _buildAppBar(),
-      body: _buildBody(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, "/post");
-        },
-        backgroundColor: Colors.orange,
-        child: const Icon(Icons.image),
+        onPressed: addNewExpensive,
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.add),
       ),
-
     );
   }
 
@@ -133,14 +147,17 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   _buildBody() {
-    return Center(
-      child: Column(
-        children: [
-         ElevatedButton(onPressed: (){
-           savedImage;
-         }, child: const Text('pick'))
-        ],
-      )
-    );
+    return Consumer<ExpensiveData>(
+        builder: (context, value, child) => ListView.builder(
+            itemCount: value.getAllExpensiveList().length,
+            itemBuilder: (context, index) => Card(
+              color: Colors.grey.shade200,
+                semanticContainer: true,
+              child: ExpensiveTile(
+                  title: value.getAllExpensiveList()[index].title,
+                  amount: 'PKR: ${value.getAllExpensiveList()[index].amount}',
+                  dateTime: value.getAllExpensiveList()[index].dateTime),
+
+            )));
   }
 }

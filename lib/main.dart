@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nodejs/api/data/expensive_data.dart';
 import 'package:nodejs/api/router.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/screens/home/home.dart';
@@ -6,6 +7,9 @@ import 'package:provider/provider.dart';
 import 'models/classes.dart';
 
 void main() {
+  ChangeNotifierProvider(
+    create: (BuildContext context)=> ImageFile() ,
+  );
   runApp(const MyApp());
 }
 
@@ -16,10 +20,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  ChangeNotifierProvider(
-      create: (BuildContext context) => ImageFile(),
+      create: (BuildContext context) => ExpensiveData(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
+        themeMode: ThemeMode.system,
         theme: ThemeData(
           primaryColor: GlobalVaraible.secondaryColor,
           scaffoldBackgroundColor: GlobalVaraible.backgroundColor,
@@ -32,4 +37,5 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
 }
