@@ -11,7 +11,9 @@ class CustomTextField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       decoration: InputDecoration(
+        iconColor: Colors.green,
         hintText: hintText,
+        // prefixIcon: Icon(Icons.telegram),
         border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
             borderSide: BorderSide(color: Colors.black)),

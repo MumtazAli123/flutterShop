@@ -4,7 +4,7 @@ import 'package:nodejs/api/router.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/screens/home/home.dart';
 import 'package:provider/provider.dart';
-import 'models/classes.dart';
+import 'models/photo.dart';
 
 void main() {
   ChangeNotifierProvider(

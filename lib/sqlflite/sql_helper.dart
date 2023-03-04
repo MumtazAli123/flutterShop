@@ -1,6 +1,10 @@
 import 'package:flutter/foundation.dart';
+import 'package:nodejs/models/photo.dart';
 import 'package:sqflite/sqflite.dart' as sql;
-import 'package:sqflite/sql.dart';
+import 'dart:async';
+import 'dart:io' as io;
+import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
 
 class SQLHelper {
 
@@ -14,7 +18,11 @@ class SQLHelper {
   }
 
   static Future<sql.Database> db() async {
-    return sql.openDatabase('dbestech.db', version: 1,
+    io.Directory documentDirectory = await getApplicationDocumentsDirectory();
+    String path = join(documentDirectory.path, sql.Database as String?);
+
+
+    return sql.openDatabase('beseech.db', version: 1,
         onCreate: (sql.Database database, int version) async {
           if (kDebugMode) {
             print("...creating Table");
@@ -23,32 +31,42 @@ class SQLHelper {
         });
   }
 
-  static Future<int> creatItem(
+  static Future<int> createItem(
       String title,
       String description,
       String productPic,
 
       ) async {
-    final db = await SQLHelper.db();
+
+    final dbClient = await SQLHelper.db();
     final data = {
       'title': title,
       'description': description,
       'productPic': productPic,
     };
-    final id = await db.insert('items', data,
+    final id = await dbClient.insert('items', data,
         conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;
   }
 
   static Future<List<Map<String, dynamic>>> getItems() async {
-    final db = await SQLHelper.db();
-    return db.query('items', orderBy: "id");
+    final dbClient = await SQLHelper.db();
+    List<Photo> photos =[];
+
+    return dbClient.query('items', orderBy: "id", );
+
+  }
+  Future close ()async{
+    var dbClient = await db();
+    dbClient.close();
   }
 
+
   static Future<List<Map<String, dynamic>>> getItem(int id) async {
-    final db = await SQLHelper.db();
-    return db.query('table', where: "id = ?", whereArgs: [id], limit: 1);
+    final dbClient = await SQLHelper.db();
+    return dbClient.query('table', where: "id = ?", whereArgs: [id], limit: 1);
   }
+
 
   static Future<int> updateItem(
       int id, String title, String? description, String productPic) async {
@@ -65,9 +83,9 @@ class SQLHelper {
   }
 
   static Future<void> deleteItem(int id) async {
-    final db = await SQLHelper.db();
+    final dbClient = await SQLHelper.db();
     try {
-      await db.delete("items", where: "id = ?", whereArgs: [id]);
+      await dbClient.delete("items", where: "id = ?", whereArgs: [id]);
     } catch (err) {
       debugPrint("Something went wrong when an item: $err");
     }

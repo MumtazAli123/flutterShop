@@ -15,7 +15,7 @@ class ExpensiveTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(title),
-      subtitle: Text('${dateTime.runtimeType} ${dateTime.day} / ${dateTime.month} / ${dateTime.year}, ${dateTime.hour} : ${dateTime.minute}: '),
+      subtitle: Text('${dateTime.runtimeType} ${dateTime.day} / ${dateTime.month} / ${dateTime.year}, ${dateTime.hour}:${dateTime.minute}:${dateTime.second}  '),
       trailing: Text(amount),
     );
   }

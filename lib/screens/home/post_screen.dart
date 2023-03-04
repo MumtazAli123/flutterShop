@@ -47,7 +47,7 @@ class _MyPostScreenState extends State<MyPostScreen> {
   // }
 
   Future<void> _addItem() async {
-    await SQLHelper.creatItem(
+    await SQLHelper.createItem(
         _titleController.text, _desController.text, savedImage! as String);
     _refreshJournals();
     if (kDebugMode) {
