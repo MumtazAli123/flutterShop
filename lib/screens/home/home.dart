@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:nodejs/constants/expensive_summary.dart';
 import 'package:nodejs/constants/list_tile.dart';
 import 'package:nodejs/widgets/input_widget.dart';
 import 'dart:io';
@@ -22,6 +23,19 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   // final ImagePicker _pickerController = ImagePicker();
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _priceController = TextEditingController();
+  final TextEditingController _centController = TextEditingController();
+
+  @override
+  void initState(){
+    super.initState();
+  //  prepare Data
+    Provider.of<ExpensiveData>(context, listen: false).prepareData();
+    _refreshJournals();
+    if (kDebugMode) {
+      print(".. Number of items ${_journals.length} ");
+    }
+  }
+
   List<Map<String, dynamic>> _journals = [];
   final color = Colors.red;
   final urlImage =
@@ -41,28 +55,21 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     Utils.snackBar1('message', context);
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _refreshJournals();
-    if (kDebugMode) {
-      print(".. Number of items ${_journals.length} ");
-    }
-  }
-
   void onSave() {
+    String amount = '${_priceController.text}.${_centController.text}';
     ExpensiveItem newExpense = ExpensiveItem(
         title: _titleController.text,
-        amount: _priceController.text,
+        amount: amount,
         dateTime: DateTime.now());
     Provider.of<ExpensiveData>(context, listen: false)
         .addNewExpensive(newExpense);
     clear();
-
   }
-  void clear (){
+
+  void clear() {
     _titleController.clear();
     _priceController.clear();
+    _centController.clear();
   }
 
   void addNewExpensive() {
@@ -79,11 +86,28 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
           const SizedBox(
             height: 10,
           ),
-          CustomTextField(controller: _titleController, hintText: 'Title'),
+          CustomTextField(
+            controller: _titleController,
+            hintText: 'Title',
+            text: TextInputType.text,
+          ),
           const SizedBox(
             height: 10,
           ),
-          CustomTextField(controller: _priceController, hintText: 'Price')
+         Row(
+           children: [
+             Expanded(child:  CustomTextField(
+               controller: _priceController,
+               hintText: 'Price',
+               text: TextInputType.number,
+             ),),
+             Expanded(child:  CustomTextField(
+               controller: _centController,
+               hintText: 'Cents',
+               text: const TextInputType.numberWithOptions(),
+             ),)
+           ],
+         ),
         ],
       ),
       () => onSave(),
@@ -148,16 +172,27 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
 
   _buildBody() {
     return Consumer<ExpensiveData>(
-        builder: (context, value, child) => ListView.builder(
-            itemCount: value.getAllExpensiveList().length,
-            itemBuilder: (context, index) => Card(
-              color: Colors.grey.shade200,
-                semanticContainer: true,
-              child: ExpensiveTile(
-                  title: value.getAllExpensiveList()[index].title,
-                  amount: 'PKR: ${value.getAllExpensiveList()[index].amount}',
-                  dateTime: value.getAllExpensiveList()[index].dateTime),
-
-            )));
+        builder: (context, value, child) => ListView(
+              children: [
+                const SizedBox(
+                  height: 20,
+                ),
+                ExpensiveSummary(startOfWeek: value.startOfWeekDate()),
+                ListView.builder(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemCount: value.getAllExpensiveList().length,
+                    itemBuilder: (context, index) => Card(
+                          color: Colors.orange.shade300,
+                          semanticContainer: true,
+                          child: ExpensiveTile(
+                              title: value.getAllExpensiveList()[index].title,
+                              amount:
+                                  'PKR: ${value.getAllExpensiveList()[index].amount}',
+                              dateTime:
+                                  value.getAllExpensiveList()[index].dateTime),
+                        )),
+              ],
+            ));
   }
 }

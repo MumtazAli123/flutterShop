@@ -5,8 +5,11 @@ import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/screens/home/home.dart';
 import 'package:provider/provider.dart';
 import 'models/photo.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async{
+  await Hive.initFlutter();
+  await Hive.openBox("expense_database");
   ChangeNotifierProvider(
     create: (BuildContext context)=> ImageFile() ,
   );

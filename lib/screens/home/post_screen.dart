@@ -118,12 +118,12 @@ class _MyPostScreenState extends State<MyPostScreen> {
                   height: 20,
                 ),
                 CustomTextField(
-                    controller: _titleController, hintText: 'Title'),
+                    controller: _titleController, hintText: 'Title', text: TextInputType.name,),
                 const SizedBox(
                   height: 20,
                 ),
                 CustomTextField(
-                    controller: _desController, hintText: 'Description'),
+                    controller: _desController, hintText: 'Description', text: TextInputType.number,),
                 const SizedBox(
                   height: 20,
                 ),

@@ -1,6 +1,6 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:nodejs/api/data/hive_database.dart';
 import 'package:nodejs/models/expense_model.dart';
 import 'package:nodejs/sqlflite/date_time_helper.dart';
 
@@ -11,17 +11,27 @@ class ExpensiveData extends ChangeNotifier{
     return overAllExpenseList;
   }
 
+//  prepare data to display
+  final db = HiveDataBase();
+  void prepareData( ){
+    if (db.readData().isNotEmpty){
+      overAllExpenseList = db.readData();
+    }
+  }
+
 //  add new expensive
 
   void addNewExpensive(ExpensiveItem newExpensive) {
     overAllExpenseList.add(newExpensive);
     notifyListeners();
+    db.saveData(overAllExpenseList);
   }
 
 //delete expensive
   void deleteExpensive(ExpensiveItem expense) {
     overAllExpenseList.remove(expense);
     notifyListeners();
+    db.saveData(overAllExpenseList);
   }
 
 // get weekday list

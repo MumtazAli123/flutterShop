@@ -1,11 +1,17 @@
-
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:googleapis/classroom/v1.dart';
 import 'package:image_picker/image_picker.dart';
+import 'dart:async';
+import 'dart:convert';
 
 class Utils {
+  static const String IMG_KEY = 'IMAGE_KAY';
+
+
+
   static const Color buttonColor = Colors.green;
   static void focusChange(
       BuildContext context, FocusNode current, FocusNode nextFocus) {
@@ -67,3 +73,4 @@ class Utils {
     );
   }
 }
+

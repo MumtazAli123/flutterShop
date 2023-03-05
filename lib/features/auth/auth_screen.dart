@@ -118,15 +118,15 @@ class _AuthScreenState extends State<AuthScreen> {
         key: _signupFromKey,
         child: Column(
           children: [
-            CustomTextField(controller: _nameController, hintText: "Name"),
+            CustomTextField(controller: _nameController, hintText: "Name", text: TextInputType.name,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _emailController, hintText: "Email"),
+            CustomTextField(controller: _emailController, hintText: "Email", text: TextInputType.emailAddress,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _passController, hintText: "Password"),
+            CustomTextField(controller: _passController, hintText: "Password", text: TextInputType.phone,),
             const SizedBox(
               height: 20,
             ),
@@ -143,11 +143,11 @@ class _AuthScreenState extends State<AuthScreen> {
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _emailController, hintText: "Email"),
+            CustomTextField(controller: _emailController, hintText: "Email", text: TextInputType.emailAddress,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _passController, hintText: "Password"),
+            CustomTextField(controller: _passController, hintText: "Password", text: TextInputType.phone,),
             const SizedBox(
               height: 20,
             ),
