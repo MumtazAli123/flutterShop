@@ -135,6 +135,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_slidable">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_slidable-2.0.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_test">
           <value>
             <list>
@@ -478,6 +485,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/fl_chart-0.61.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.8/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_slidable-2.0.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/gcloud-0.8.7/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/googleapis-9.2.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/graphs-2.2.0/lib" />

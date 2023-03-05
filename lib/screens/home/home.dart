@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:nodejs/api/data/hive_database.dart';
 import 'package:nodejs/constants/expensive_summary.dart';
 import 'package:nodejs/constants/list_tile.dart';
 import 'package:nodejs/widgets/input_widget.dart';
@@ -26,9 +27,9 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   final TextEditingController _centController = TextEditingController();
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
-  //  prepare Data
+    //  prepare Data
     Provider.of<ExpensiveData>(context, listen: false).prepareData();
     _refreshJournals();
     if (kDebugMode) {
@@ -49,21 +50,30 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     });
   }
 
-  Future<void> _deleteItem(
-    int id,
-  ) async {
-    Utils.snackBar1('message', context);
+  Future<void> updateItem(ExpensiveItem expensiveItem) async {
+    await HiveDataBase.updateItem(DateTime.daysPerWeek, _titleController.text,
+        _priceController.text, _centController.text);
+    _refreshJournals();
+  }
+
+  Future<void> deleteExpenseItem(ExpensiveItem expense) async {
+    Provider.of<ExpensiveData>(context, listen: false).deleteExpensive(expense);
+    Utils.snackBar1('Delete SuccessFully', context);
   }
 
   void onSave() {
-    String amount = '${_priceController.text}.${_centController.text}';
-    ExpensiveItem newExpense = ExpensiveItem(
-        title: _titleController.text,
-        amount: amount,
-        dateTime: DateTime.now());
-    Provider.of<ExpensiveData>(context, listen: false)
-        .addNewExpensive(newExpense);
-    clear();
+    if (_titleController.text.isNotEmpty &&
+        _priceController.text.isNotEmpty &&
+        _centController.text.isNotEmpty) {
+      String amount = '${_priceController.text}.${_centController.text}';
+      ExpensiveItem newExpense = ExpensiveItem(
+          title: _titleController.text,
+          amount: amount,
+          dateTime: DateTime.now());
+      Provider.of<ExpensiveData>(context, listen: false)
+          .addNewExpensive(newExpense);
+      clear();
+    }
   }
 
   void clear() {
@@ -94,20 +104,24 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
           const SizedBox(
             height: 10,
           ),
-         Row(
-           children: [
-             Expanded(child:  CustomTextField(
-               controller: _priceController,
-               hintText: 'Price',
-               text: TextInputType.number,
-             ),),
-             Expanded(child:  CustomTextField(
-               controller: _centController,
-               hintText: 'Cents',
-               text: const TextInputType.numberWithOptions(),
-             ),)
-           ],
-         ),
+          Row(
+            children: [
+              Expanded(
+                child: CustomTextField(
+                  controller: _priceController,
+                  hintText: 'Price',
+                  text: TextInputType.number,
+                ),
+              ),
+              Expanded(
+                child: CustomTextField(
+                  controller: _centController,
+                  hintText: 'Cents',
+                  text: const TextInputType.numberWithOptions(),
+                ),
+              )
+            ],
+          ),
         ],
       ),
       () => onSave(),
@@ -186,11 +200,15 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                           color: Colors.orange.shade300,
                           semanticContainer: true,
                           child: ExpensiveTile(
-                              title: value.getAllExpensiveList()[index].title,
-                              amount:
-                                  'PKR: ${value.getAllExpensiveList()[index].amount}',
-                              dateTime:
-                                  value.getAllExpensiveList()[index].dateTime),
+                            title: value.getAllExpensiveList()[index].title,
+                            amount:
+                                'PKR: ${value.getAllExpensiveList()[index].amount}',
+                            dateTime:
+                                value.getAllExpensiveList()[index].dateTime,
+                            deletedTaped: (BuildContext) => deleteExpenseItem(
+                                value.getAllExpensiveList()[index]),
+                            editTaped: (BuildContext) {},
+                          ),
                         )),
               ],
             ));

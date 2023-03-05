@@ -9,7 +9,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async{
   await Hive.initFlutter();
-  await Hive.openBox("expense_database");
+  await Hive.openBox("expense_database2");
   ChangeNotifierProvider(
     create: (BuildContext context)=> ImageFile() ,
   );

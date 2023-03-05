@@ -1,7 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:nodejs/api/bar_graph/bar_data.dart';
-import 'package:provider/single_child_widget.dart';
 
 class MyBarGraph extends StatelessWidget {
   final double? maxY;
@@ -26,7 +25,7 @@ class MyBarGraph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // initialize bar data
+    // initialize bar data;
     BarData myBarData = BarData(
         sunAmount: sunAmount,
         monAmount: monAmount,
@@ -44,11 +43,9 @@ class MyBarGraph extends StatelessWidget {
         show: true,
         topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
         leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-        bottomTitles: AxisTitles(
-            sideTitles: SideTitles(
-          showTitles: false,
-          getTitlesWidget: getBottomTiles,
-        )),
+       rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false) ),
+
+       bottomTitles: AxisTitles(sideTitles:SideTitles(showTitles: true) )
       ),
       gridData: FlGridData(show: false),
       borderData: FlBorderData(show: false),

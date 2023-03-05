@@ -38,35 +38,30 @@ class ExpensiveSummary extends StatelessWidget {
   }
   // calculate week total
 
-  // String calculateWeekTotal (
-  //     ExpensiveData value,
-  //     String sunday,
-  //     String monday,
-  //     String tuesday,
-  //     String wednesday,
-  //     String thursday,
-  //     String friday,
-  //     String saturday
-  //
-  //     ){
-  //   List<double> values = [
-  //     value.calculateDailyExpensiveSummary()[sunday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[monday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[tuesday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[wednesday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[thursday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[friday] ?? 0,
-  //     value.calculateDailyExpensiveSummary()[saturday] ?? 0,
-  //   ];
-  //   String total (int p) {
-  //     assert(p > 0);
-  //     p = 0;
-  //     for (int i = 0; i < values.length; i++){
-  //      p += values[i] as int;
-  //     }
-  //     return p.toStringAsFixed(2);
-  //   }
-  // }
+  String calculateWeekTotal(
+      ExpensiveData value,
+      String sunday,
+      String monday,
+      String tuesday,
+      String wednesday,
+      String thursday,
+      String friday,
+      String saturday) {
+    List<double> values = [
+      value.calculateDailyExpensiveSummary()[sunday] ?? 0,
+      value.calculateDailyExpensiveSummary()[monday] ?? 0,
+      value.calculateDailyExpensiveSummary()[tuesday] ?? 0,
+      value.calculateDailyExpensiveSummary()[wednesday] ?? 0,
+      value.calculateDailyExpensiveSummary()[thursday] ?? 0,
+      value.calculateDailyExpensiveSummary()[friday] ?? 0,
+      value.calculateDailyExpensiveSummary()[saturday] ?? 0,
+    ];
+    double total = 0;
+    for (int i = 0; i < values.length; i++) {
+      total += values[i];
+    }
+    return total.toStringAsFixed(2);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -89,12 +84,20 @@ class ExpensiveSummary extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  const Row(
+                  Row(
                     children: [
-                      Text("Week Total"),
-                      Text(' \$200'),
+                      const Text(
+                        "Week Total,",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        ' PKR: ${calculateWeekTotal(value, sunday, monday, tuesday, wednesday, thursday, friday, saturday)}',
+                        style: const TextStyle(
+                            fontSize: 24, fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
+                  const SizedBox(height: 16,),
                   SizedBox(
                     height: 200,
                     child: MyBarGraph(
