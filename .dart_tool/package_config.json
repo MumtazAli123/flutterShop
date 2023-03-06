@@ -8,10 +8,28 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-47.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/analyzer-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "another_flushbar",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/another_flushbar-1.12.29",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/args-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "async",
@@ -32,10 +50,64 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "build",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "build_config",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build_config-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_daemon",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build_daemon-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_resolvers",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build_resolvers-2.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "build_runner",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build_runner-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "build_runner_core",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/build_runner_core-7.2.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/built_collection-5.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/built_value-8.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/characters-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/checked_yaml-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "clock",
@@ -44,8 +116,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "code_builder",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/code_builder-4.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/collection-1.17.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/convert-3.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -66,6 +150,12 @@
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "dart_style",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/dart_style-2.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "equatable",
@@ -92,6 +182,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "fixnum",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "fl_chart",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/fl_chart-0.61.0",
       "packageUri": "lib/",
@@ -111,7 +207,7 @@
     },
     {
       "name": "flutter_plugin_android_lifecycle",
-      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.8",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -134,10 +230,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/frontend_server_client-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "gcloud",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/gcloud-0.8.7",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/glob-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "googleapis",
@@ -164,10 +272,22 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "hive_generator",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/hive_generator-1.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/http-0.13.5",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
@@ -177,13 +297,13 @@
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker-0.8.6+3",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker-0.8.6+4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
       "name": "image_picker_android",
-      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_android-0.8.5+7",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_android-0.8.5+9",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -195,13 +315,19 @@
     },
     {
       "name": "image_picker_ios",
-      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.6+9",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.7",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.18"
     },
     {
       "name": "image_picker_platform_interface",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_platform_interface-2.6.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -212,10 +338,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "json_annotation",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/json_annotation-4.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/logging-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "matcher",
@@ -236,8 +374,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mime",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "nested",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -296,6 +446,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "process",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/process-4.2.4",
       "packageUri": "lib/",
@@ -308,16 +464,52 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "pub_semver",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/pub_semver-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "pubspec_parse",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "rive",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/rive-0.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "shelf",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/shelf-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "source_gen",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/source_gen-1.2.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "source_helper",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/source_helper-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "source_span",
@@ -350,6 +542,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "stream_transform",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/stream_transform-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "string_scanner",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
@@ -374,6 +572,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "timing",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/timing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "typed_data",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/typed_data-1.3.1",
       "packageUri": "lib/",
@@ -384,6 +588,18 @@
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/watcher-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/web_socket_channel-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "win32",
@@ -398,13 +614,19 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/yaml-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "nodejs",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-03-05T17:44:49.001725Z",
+  "generated": "2023-03-05T20:15:20.460235Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-218.1.beta"
 }

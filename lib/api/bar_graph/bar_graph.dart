@@ -25,8 +25,10 @@ class MyBarGraph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     // initialize bar data;
     BarData myBarData = BarData(
+
         sunAmount: sunAmount,
         monAmount: monAmount,
         tueAmount: tueAmount,
@@ -40,6 +42,7 @@ class MyBarGraph extends StatelessWidget {
       maxY: maxY,
       minY: 0,
       titlesData: FlTitlesData(
+
         show: true,
         topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
         leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
@@ -49,6 +52,7 @@ class MyBarGraph extends StatelessWidget {
       ),
       gridData: FlGridData(show: false),
       borderData: FlBorderData(show: false),
+
       barGroups: myBarData.barData
           .map((data) => BarChartGroupData(x: data.x, barRods: [
                 BarChartRodData(

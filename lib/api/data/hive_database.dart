@@ -2,8 +2,15 @@ import 'package:hive/hive.dart';
 import 'package:nodejs/models/expense_model.dart';
 import 'expensive_data.dart';
 
+final _myBox = Hive.box("expense_database2");
+
 class HiveDataBase {
-  final _myBox = Hive.box("expense_database2");
+  List todayDataList  = [];
+
+  void loadData (){}
+  void updateData(int daysPerWeek, String text, String price, String cent){
+    _myBox.put("CURRENT_HIVE-DATA_LIST", todayDataList);
+  }
 
   void saveData(List<ExpensiveItem> allExpensive) {
     /*

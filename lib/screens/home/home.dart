@@ -4,7 +4,6 @@ import 'package:nodejs/api/data/hive_database.dart';
 import 'package:nodejs/constants/expensive_summary.dart';
 import 'package:nodejs/constants/list_tile.dart';
 import 'package:nodejs/widgets/input_widget.dart';
-import 'dart:io';
 import 'package:provider/provider.dart';
 import '../../api/data/expensive_data.dart';
 import '../../features/auth/auth_screen.dart';
@@ -20,7 +19,8 @@ class MyHomeScreen extends StatefulWidget {
 }
 
 class _MyHomeScreenState extends State<MyHomeScreen> {
-  bool _isLoading = true;
+  HiveDataBase db = HiveDataBase();
+  // final _myBox = Hive.box("expense_database2");
   // final ImagePicker _pickerController = ImagePicker();
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _priceController = TextEditingController();
@@ -32,6 +32,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     //  prepare Data
     Provider.of<ExpensiveData>(context, listen: false).prepareData();
     _refreshJournals();
+   updateItem();
     if (kDebugMode) {
       print(".. Number of items ${_journals.length} ");
     }
@@ -46,12 +47,11 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     final data = await SQLHelper.getItems();
     setState(() {
       _journals = data;
-      _isLoading = false;
     });
   }
 
-  Future<void> updateItem(ExpensiveItem expensiveItem) async {
-    await HiveDataBase.updateItem(DateTime.daysPerWeek, _titleController.text,
+  Future<void> updateItem() async {
+    db.updateData(DateTime.daysPerWeek, _titleController.text,
         _priceController.text, _centController.text);
     _refreshJournals();
   }
@@ -192,6 +192,9 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                   height: 20,
                 ),
                 ExpensiveSummary(startOfWeek: value.startOfWeekDate()),
+                const SizedBox(
+                  height: 10,
+                ),
                 ListView.builder(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
@@ -205,9 +208,16 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                 'PKR: ${value.getAllExpensiveList()[index].amount}',
                             dateTime:
                                 value.getAllExpensiveList()[index].dateTime,
+                            // ignore: avoid_types_as_parameter_names
                             deletedTaped: (BuildContext) => deleteExpenseItem(
                                 value.getAllExpensiveList()[index]),
-                            editTaped: (BuildContext) {},
+                            // ignore: avoid_types_as_parameter_names
+                            editTaped: (BuildContext) {
+                              db.updateData(DateTime.daysPerWeek, _titleController.text,
+                                  _priceController.text, _centController.text);
+                              Utils.snackBar(
+                                  'Update was successfully', context);
+                            },
                           ),
                         )),
               ],
