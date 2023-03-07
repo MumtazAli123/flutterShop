@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/widgets/custom_button.dart';
 import 'package:nodejs/widgets/input_widget.dart';
@@ -20,12 +19,9 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen> {
   late Auth _auth = Auth.signIn;
   final _signupFromKey = GlobalKey<FormState>();
-  final _signInFromKey = GlobalKey<FormState>();
-
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passController = TextEditingController();
-  final ImagePicker _picker = ImagePicker();
 
   @override
   void dispose() {
@@ -118,15 +114,15 @@ class _AuthScreenState extends State<AuthScreen> {
         key: _signupFromKey,
         child: Column(
           children: [
-            CustomTextField(controller: _nameController, hintText: "Name", text: TextInputType.name,),
+            CustomTextField(controller: _nameController, hintText: "Name", keyBordType: TextInputType.name,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _emailController, hintText: "Email", text: TextInputType.emailAddress,),
+            CustomTextField(controller: _emailController, hintText: "Email", keyBordType: TextInputType.emailAddress,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _passController, hintText: "Password", text: TextInputType.phone,),
+            CustomTextField(controller: _passController, hintText: "Password", keyBordType: TextInputType.phone,),
             const SizedBox(
               height: 20,
             ),
@@ -143,11 +139,11 @@ class _AuthScreenState extends State<AuthScreen> {
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _emailController, hintText: "Email", text: TextInputType.emailAddress,),
+            CustomTextField(controller: _emailController, hintText: "Email", keyBordType: TextInputType.emailAddress,),
             const SizedBox(
               height: 10,
             ),
-            CustomTextField(controller: _passController, hintText: "Password", text: TextInputType.phone,),
+            CustomTextField(controller: _passController, hintText: "Password", keyBordType: TextInputType.phone,),
             const SizedBox(
               height: 20,
             ),

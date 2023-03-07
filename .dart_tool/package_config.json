@@ -38,6 +38,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "auto_size_text_pk",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/auto_size_text_pk-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "awesome_dialog",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/awesome_dialog-3.0.2",
       "packageUri": "lib/",
@@ -326,6 +332,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "io",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
@@ -590,6 +602,18 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "velocity_x",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/velocity_x-3.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vxstate",
+      "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/vxstate-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "watcher",
       "rootUri": "file:///Users/sindhi/.pub-cache/hosted/pub.dev/watcher-1.0.2",
       "packageUri": "lib/",
@@ -626,7 +650,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-03-05T20:15:20.460235Z",
+  "generated": "2023-03-07T00:11:05.953701Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-218.1.beta"
 }

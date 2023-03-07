@@ -32,7 +32,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     //  prepare Data
     Provider.of<ExpensiveData>(context, listen: false).prepareData();
     _refreshJournals();
-   updateItem();
+    updateItem();
     if (kDebugMode) {
       print(".. Number of items ${_journals.length} ");
     }
@@ -99,7 +99,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
           CustomTextField(
             controller: _titleController,
             hintText: 'Title',
-            text: TextInputType.text,
+            keyBordType: TextInputType.text,
           ),
           const SizedBox(
             height: 10,
@@ -110,14 +110,14 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                 child: CustomTextField(
                   controller: _priceController,
                   hintText: 'Price',
-                  text: TextInputType.number,
+                  keyBordType: TextInputType.number,
                 ),
               ),
               Expanded(
                 child: CustomTextField(
                   controller: _centController,
                   hintText: 'Cents',
-                  text: const TextInputType.numberWithOptions(),
+                  keyBordType: const TextInputType.numberWithOptions(),
                 ),
               )
             ],
@@ -170,17 +170,16 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     return AppBar(
       backgroundColor: Colors.green,
       centerTitle: true,
+      leading: IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, AuthScreen.routeName);
+            Utils.snackBar('Register new account', context);
+          },
+          icon: const Icon(Icons.person)) ,
       title: const Text(
         "Home ",
         style: TextStyle(color: Colors.white),
       ),
-      actions: [
-        IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, AuthScreen.routeName);
-            },
-            icon: const Icon(Icons.person))
-      ],
     );
   }
 
@@ -208,13 +207,12 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                                 'PKR: ${value.getAllExpensiveList()[index].amount}',
                             dateTime:
                                 value.getAllExpensiveList()[index].dateTime,
-                            // ignore: avoid_types_as_parameter_names
+                            // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
                             deletedTaped: (BuildContext) => deleteExpenseItem(
                                 value.getAllExpensiveList()[index]),
-                            // ignore: avoid_types_as_parameter_names
+                            // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
                             editTaped: (BuildContext) {
-                              db.updateData(DateTime.daysPerWeek, _titleController.text,
-                                  _priceController.text, _centController.text);
+                              updateItem();
                               Utils.snackBar(
                                   'Update was successfully', context);
                             },

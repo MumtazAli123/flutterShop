@@ -1,0 +1,12 @@
+com.tekartik.sqflite-jetified-annotation-experimental-1.1.0-0 /Users/sindhi/.gradle/caches/transforms-3/33c23d9b6dd23130b990193ad1cecac8/transformed/jetified-annotation-experimental-1.1.0/res
+com.tekartik.sqflite-jetified-window-1.0.0-beta04-1 /Users/sindhi/.gradle/caches/transforms-3/4b2085eb20f45cd710b96731b2942ef8/transformed/jetified-window-1.0.0-beta04/res
+com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-2 /Users/sindhi/.gradle/caches/transforms-3/71e222f68ec659a0236b2f722a7f1f75/transformed/jetified-window-java-1.0.0-beta04/res
+com.tekartik.sqflite-core-1.6.0-3 /Users/sindhi/.gradle/caches/transforms-3/d5ffcd9b721cd182e1600a8c0b387ddb/transformed/core-1.6.0/res
+com.tekartik.sqflite-main-4 /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/android/src/main/res
+com.tekartik.sqflite-release-5 /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/android/src/release/res
+com.tekartik.sqflite-pngs-6 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/pngs/release
+com.tekartik.sqflite-resValues-7 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/resValues/release
+com.tekartik.sqflite-rs-8 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/rs/release
+com.tekartik.sqflite-mergeReleaseResources-9 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.tekartik.sqflite-mergeReleaseResources-10 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.tekartik.sqflite-merged_res-11 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/merged_res/release

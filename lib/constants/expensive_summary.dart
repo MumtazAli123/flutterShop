@@ -87,7 +87,7 @@ class ExpensiveSummary extends StatelessWidget {
                   Row(
                     children: [
                       const Text(
-                        "Week Total,",
+                        "Total,",
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       Text(

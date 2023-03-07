@@ -1,0 +1,4 @@
+#Tue Mar 07 08:47:21 PKT 2023
+base.0=/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

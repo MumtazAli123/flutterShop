@@ -18,7 +18,7 @@ class SQLHelper {
   }
 
   static Future<sql.Database> db() async {
-    io.Directory documentDirectory = await getApplicationDocumentsDirectory();
+    // io.Directory documentDirectory = await getApplicationDocumentsDirectory();
     // String path = join(documentDirectory.path, sql.Database as String?);
 
     return sql.openDatabase('beseech.db', version: 1,

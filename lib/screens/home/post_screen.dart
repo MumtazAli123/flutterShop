@@ -26,6 +26,7 @@ class _MyPostScreenState extends State<MyPostScreen> {
   void savedImages(File image) {
     savedImage = image;
   }
+  // ignore: non_constant_identifier_names
   void Save() {
     ExpensiveItem newExpense = ExpensiveItem(
         title: _titleController.text,
@@ -118,12 +119,12 @@ class _MyPostScreenState extends State<MyPostScreen> {
                   height: 20,
                 ),
                 CustomTextField(
-                    controller: _titleController, hintText: 'Title', text: TextInputType.name,),
+                    controller: _titleController, hintText: 'Title', keyBordType: TextInputType.name,),
                 const SizedBox(
                   height: 20,
                 ),
                 CustomTextField(
-                    controller: _desController, hintText: 'Description', text: TextInputType.number,),
+                    controller: _desController, hintText: 'Description', keyBordType: TextInputType.number,),
                 const SizedBox(
                   height: 20,
                 ),

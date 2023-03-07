@@ -22,6 +22,10 @@ async
 2.18
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/async-2.10.0/
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/async-2.10.0/lib/
+auto_size_text_pk
+2.12
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/auto_size_text_pk-3.0.0/
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/auto_size_text_pk-3.0.0/lib/
 awesome_dialog
 2.12
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/awesome_dialog-3.0.2/
@@ -202,6 +206,10 @@ image_picker_platform_interface
 2.12
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_platform_interface-2.6.3/
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_platform_interface-2.6.3/lib/
+intl
+2.12
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/intl-0.17.0/
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/intl-0.17.0/lib/
 io
 2.12
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/io-1.0.4/
@@ -374,6 +382,14 @@ vector_math
 2.14
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/vector_math-2.1.4/
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/vector_math-2.1.4/lib/
+velocity_x
+2.17
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/velocity_x-3.6.0/
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/velocity_x-3.6.0/lib/
+vxstate
+2.12
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/vxstate-2.3.0/
+file:///Users/sindhi/.pub-cache/hosted/pub.dev/vxstate-2.3.0/lib/
 watcher
 2.14
 file:///Users/sindhi/.pub-cache/hosted/pub.dev/watcher-1.0.2/

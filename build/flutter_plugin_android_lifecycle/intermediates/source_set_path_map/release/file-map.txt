@@ -1,0 +1,12 @@
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-annotation-experimental-1.1.0-0 /Users/sindhi/.gradle/caches/transforms-3/33c23d9b6dd23130b990193ad1cecac8/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-window-1.0.0-beta04-1 /Users/sindhi/.gradle/caches/transforms-3/4b2085eb20f45cd710b96731b2942ef8/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-window-java-1.0.0-beta04-2 /Users/sindhi/.gradle/caches/transforms-3/71e222f68ec659a0236b2f722a7f1f75/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-core-1.6.0-3 /Users/sindhi/.gradle/caches/transforms-3/d5ffcd9b721cd182e1600a8c0b387ddb/transformed/core-1.6.0/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-main-4 /Users/sindhi/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/android/src/main/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-release-5 /Users/sindhi/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/android/src/release/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-6 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/generated/res/pngs/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-7 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/generated/res/resValues/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-rs-8 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/generated/res/rs/release
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-9 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeReleaseResources-10 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-11 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/intermediates/merged_res/release

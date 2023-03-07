@@ -1,6 +1,5 @@
 import 'package:hive/hive.dart';
 import 'package:nodejs/models/expense_model.dart';
-import 'expensive_data.dart';
 
 final _myBox = Hive.box("expense_database2");
 

@@ -2,12 +2,9 @@ import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:googleapis/classroom/v1.dart';
-import 'package:image_picker/image_picker.dart';
-import 'dart:async';
-import 'dart:convert';
 
 class Utils {
+  // ignore: constant_identifier_names
   static const String IMG_KEY = 'IMAGE_KAY';
 
 
