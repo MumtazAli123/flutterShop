@@ -42,7 +42,7 @@ class Utils {
   static popupAwesome (BuildContext context, body,  onTap){
     return AwesomeDialog(
       context: context,
-      animType: AnimType.scale,
+      animType: AnimType.bottomSlide,
       dialogType: DialogType.info,
       body: body,
       btnOkOnPress: onTap,

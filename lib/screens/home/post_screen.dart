@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:nodejs/api/data/expensive_data.dart';
+import 'package:nodejs/utils/utils.dart';
 import 'package:nodejs/widgets/custom_button.dart';
 import 'package:nodejs/widgets/image_input.dart';
 import 'package:nodejs/widgets/input_widget.dart';
@@ -37,15 +38,15 @@ class _MyPostScreenState extends State<MyPostScreen> {
   }
 
 
-  // void onSave() {
-  //   if (_titleController.text.isEmpty ||
-  //       _desController.text.isEmpty ||
-  //       savedImage == null) {
-  //     return;
-  //   } else {
-  //     Provider.of<ExpensiveData>(context, listen: false).addNewExpensive(null);
-  //   }
-  // }
+  void onSave() {
+    if (_titleController.text.isEmpty ||
+        _desController.text.isEmpty ||
+        savedImage == null) {
+      return;
+    } else {
+      Provider.of<ExpensiveData>(context, listen: false).addNewExpensive(savedImage! as ExpensiveItem);
+    }
+  }
 
   Future<void> _addItem() async {
     await SQLHelper.createItem(
@@ -93,6 +94,61 @@ class _MyPostScreenState extends State<MyPostScreen> {
     return Scaffold(
       appBar: _buildAppBar(),
       body: _buildBody(),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange,
+        child: const Icon(Icons.add),
+        onPressed: () {
+          Utils.popupAwesome(context, Column(
+            children: [
+          Center(
+          child: Container(
+          padding: const EdgeInsets.all(8.0),
+            width: 400,
+            child: SingleChildScrollView(
+              child: Form(
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    CustomTextField(
+                      controller: _titleController,
+                      icon: Icons.text_format,
+                      hintText: 'Title', keyBordType: TextInputType.name,),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    CustomTextField(
+                      icon: Icons.money,
+                      controller: _desController, hintText: 'Amount', keyBordType: TextInputType.number,),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    ImageInputScreen(savedImages),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    CustomButton(
+                        text: 'Update',
+                        icon: Icons.add,
+                        onTap: () async {
+                          _titleController.text = '';
+                          _desController.text = '';
+                          // ignore: unrelated_type_equality_checks
+                          savedImage !=  '' ;
+                          // ignore: use_build_context_synchronously
+                          Navigator.of(context).pop();
+                        })
+                  ],
+                ),
+              ),
+            ),
+          )),
+            ],
+          ), (){});
+        },
+
+      ),
     );
   }
 
@@ -107,45 +163,6 @@ class _MyPostScreenState extends State<MyPostScreen> {
   }
 
   _buildBody() {
-    return Center(
-      child: Container(
-        padding: const EdgeInsets.all(8.0),
-        width: 400,
-        child: SingleChildScrollView(
-          child: Form(
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 20,
-                ),
-                CustomTextField(
-                    controller: _titleController, hintText: 'Title', keyBordType: TextInputType.name,),
-                const SizedBox(
-                  height: 20,
-                ),
-                CustomTextField(
-                    controller: _desController, hintText: 'Description', keyBordType: TextInputType.number,),
-                const SizedBox(
-                  height: 20,
-                ),
-                ImageInputScreen(savedImages),
-                const SizedBox(
-                  height: 20,
-                ),
-                CustomButton(
-                    text: 'Update',
-                    icon: Icons.add,
-                    onTap: () async {
-                      _titleController.text = '';
-                      _desController.text = '';
-                      // ignore: use_build_context_synchronously
-                      Navigator.of(context).pop();
-                    })
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
+    return const Center();
   }
 }
