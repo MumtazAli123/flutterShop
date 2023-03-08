@@ -6,13 +6,16 @@ import 'package:nodejs/screens/wallet/agent.dart';
 import 'package:nodejs/screens/wallet/banking/banking.dart';
 import 'package:nodejs/screens/wallet/banking/internet.dart';
 import 'package:nodejs/screens/wallet/banking/utilaty_bill.dart';
-import 'package:nodejs/screens/wallet/mobile/mobile_topup.dart';
+import 'package:nodejs/screens/wallet/mobile/telenor/telenor_topup.dart';
+import 'package:nodejs/screens/wallet/mobile/ufone/ufone.dart';
+import 'package:nodejs/screens/wallet/mobile/zong/zong.dart';
 import 'package:nodejs/screens/wallet/schools/schools.dart';
 import 'package:nodejs/screens/wallet/send_money/wallet_topup.dart';
 import 'package:nodejs/screens/wallet/wallet.dart';
 import 'package:nodejs/screens/wallet/wallet_history.dart';
 import '../screens/wallet/banking/nolcard.dart';
 import '../screens/wallet/input4digit.dart';
+import '../screens/wallet/mobile/jazz/jazz.dart';
 import '../screens/wallet/send_money/send_money.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
@@ -32,9 +35,18 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case ("/agent"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const AgentMapScreen());
-    case ("/mobile"):
+    case ("/telenor"):
       return MaterialPageRoute(
-          settings: routeSettings, builder: (_) => const MobileTopUpScreen());
+          settings: routeSettings, builder: (_) =>  const TelenorTopUpScreen());
+    case ("/jazz"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) =>  const JazzTopUpScreen());
+    case ("/ufone"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) =>  const UfoneTopUpScreen());
+    case ("/zong"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) =>  const ZongTopUpScreen());
     case ("/wallet_topUp"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const WalletToUpScreen());

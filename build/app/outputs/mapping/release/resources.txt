@@ -18,6 +18,7 @@ music
 verticalText
 .mp4
 android.util.LongArray
+FlutterSharedPreferences
 getUncaughtExceptionPreHandler
 onBackPressed
 adapter
@@ -34,9 +35,9 @@ Orientation
 click
 0
 AspectFrame
-left
 kotlin.jvm.functions.
 WindowInfoTrackerImpl.kt
+left
 kotlinx.coroutines.DefaultExecutor
 onMenuKeyEvent
 TextInputClient.updateEditingStateWit...
@@ -81,14 +82,15 @@ splitPairFilters
 x
 onNewIntent
 SystemUiMode.edgeToEdge
-ULONG
 acc
+ULONG
 flutter_assets
 GPSAltitude
 ColorSpace
 ImageUniqueID
 TextInputClient.performPrivateCommand
 displayFeature.rect
+flutter.
 mimeType
 already_active
 isTagEnabled
@@ -120,6 +122,7 @@ COMPLETING_WAITING_CHILDREN
 _invoked
 PixelYDimension
 locale
+remove
 FlashpixVersion
 SDK_INT
 WhiteBalance
@@ -204,8 +207,8 @@ MaxApertureValue
 IS_LINK
 cell
 %s.%sParcelizer
-safeCast
 URI
+safeCast
 URL
 FlutterTextureView
 CHARACTERS
@@ -259,17 +262,17 @@ HapticFeedback.vibrate
 repeatCount
 noDrop
 $activityFilters
+void
 flutter/keydata
 read
-void
 memoryPressure
 flutter/restoration
 touch
 onUserLeaveHint
 _cur
 onResume
-OFFER_SUCCESS
 java.util.List
+OFFER_SUCCESS
 hybrid
 UNEXPECTED:
 SensitivityType
@@ -333,18 +336,20 @@ password
 kotlinx.coroutines.scheduler.keep.ali...
 INCREASE
 NO_TARGET
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBEb3VibGUu
 jar
 state
 secondaryActivityStack.activities
 CompanionObject
 element
-cache
 creditCardExpirationMonth
+cache
 deltaText
 zoomIn
 Make
 Destroying.
 GPSImgDirectionRef
+setInt
 input
 InteroperabilityIndex
 FocalPlaneYResolution
@@ -456,16 +461,16 @@ DATETIME
 enableSuggestions
 primitiveFqNames.values
 PASTE
-IS_MULTILINE
 short
+IS_MULTILINE
 middleName
 window
 personFamilyName
 Cancelling
 IS_HEADER
 CLIP_RRECT
-ApertureValue
 COMPLETING_RETRY
+ApertureValue
 VISIBLE_PASSWORD
 IS_FOCUSABLE
 TextInput.clearClient
@@ -479,8 +484,8 @@ hybridFallback
 oemFeature
 put
 getBounds
-TextInputType.text
 EmptyCoroutineContext
+TextInputType.text
 YResolution
 CPU_ACQUIRED
 ACTION_ARGUMENT_SELECTION_END_INT
@@ -571,6 +576,7 @@ Brightness.dark
 errorCode
 flutter_image_picker_pending_image_uri
 ISOSpeed
+setDouble
 selectionBase
 SettingsChannel
 android.intent.action.GET_CONTENT
@@ -627,6 +633,7 @@ debug
 SplitRuleResolution
 alarms
 .flutter.image_provider
+clear
 jClass
 TextInput.show
 setPosture
@@ -654,9 +661,9 @@ PlatformViewsController
 GPSDestBearing
 path
 RecommendedExposureIndex
+ReceiveQueued
 ExposureMode
 GPSSpeedRef
-ReceiveQueued
 systemStatusBarContrastEnforced
 getSuppressed
 kotlin.reflect.jvm.internal.Reflectio...
@@ -666,14 +673,16 @@ FOLD
 DartMessenger
 databases
 addObserver
+setBool
 PixelXDimension
 HIGH_CONTRAST
 ON_ANY
 android.intent.extra.ALLOW_MULTIPLE
 MOVE_CURSOR_BACKWARD_BY_WORD
 removeViewImmediate
-kotlinx.coroutines.scheduler.resoluti...
 kotlin.Unit
+kotlinx.coroutines.scheduler.resoluti...
+setString
 removeView
 ON_PAUSE
 route
@@ -700,8 +709,8 @@ logLevel
 popRoute
 background_mode
 NAMES_ROUTE
-throwableMethods
 defaultDisplay
+throwableMethods
 StripOffsets
 %02x
 completion
@@ -716,6 +725,7 @@ hintText
 LOCALE
 personNamePrefix
 activityComponent.packageName
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIGxpc3Qu
 pickMultiImage
 MEDIUM_IMPACT
 feature.rect
@@ -761,11 +771,13 @@ extendedAddress
 content
 primaryActivity
 secondaryActivity
+setStringList
 kotlin.collections.Map
 ENQUEUE_FAILED
 cached_engine_group_id
 statusBarColor
 SubjectArea
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBCaWdJb...
 java.lang.Boolean
 contentCommitMimeTypes
 FocalPlaneXResolution
@@ -829,9 +841,9 @@ it
 PlatformChannel
 params
 Contrast
-UNDECIDED
 FlutterView
 announce
+UNDECIDED
 TextInputType.address
 PLAIN_TEXT
 getResId
@@ -905,6 +917,7 @@ null
 grabbing
 NavigationChannel
 background
+StorageError
 alwaysUse24HourFormat
 true
 retrieve
@@ -934,17 +947,17 @@ kotlin.Comparable
 consumer
 show_password
 on
-baseKey
 /1
 nativeSpellCheckServiceDefined
+baseKey
 vm_snapshot_data
 UserComment
 currentDisplay
 LensSpecification
 Clipboard.getData
 longPress
-COROUTINE_SUSPENDED
 GPSDOP
+COROUTINE_SUSPENDED
 GPSInfoIFDPointer
 Trace
 ACCESSIBLE_NAVIGATION
@@ -960,6 +973,7 @@ Artist
 HAS_TOGGLED_STATE
 PathProviderPlugin
 IS_SELECTED
+commit
 TextInput.hide
 createAsync
 primaryActivityStack
@@ -1004,8 +1018,8 @@ URATIONAL
 long
 SystemUiMode.immersive
 PlanarConfiguration
-kotlinx.coroutines.channels.defaultBu...
 HALF_OPENED
+kotlinx.coroutines.channels.defaultBu...
 maxHeight
 activity.windowManager.currentWindowM...
 ImageResizer
@@ -1056,6 +1070,7 @@ birthDateFull
 windowMetrics.bounds
 TOP_OVERLAYS
 ruleComponent
+plugins.flutter.io/shared_preferences...
 Dispatchers.Default
 kotlinx.coroutines.io.parallelism
 NUMBER
@@ -1160,8 +1175,8 @@ gender
 java.lang.Double
 columns
 AppLifecycleState.detached
-resizeRow
 range
+resizeRow
 usesVirtualDisplay
 flutter/spellcheck
 IS_TOGGLED
@@ -1275,6 +1290,7 @@ androidx.activity.result.contract.ext...
 getWindowLayoutInfo
 opaque
 JPEGInterchangeFormatLength
+getAll
 REUSABLE_CLAIMED
 java.util.Iterator
 0x%08x
@@ -1286,8 +1302,8 @@ addressState
 kotlin.CharSequence
 pathList
 intent
-GPSDestLongitudeRef
 int
+GPSDestLongitudeRef
 file:
 personName
 LensMake
@@ -1375,6 +1391,7 @@ Marking color:androidx_core_ripple_material_light:2130837504 used because it mat
 Marking color:androidx_core_secondary_text_default_material_light:2130837505 used because it matches string pool constant android
 Marking id:androidx_window_activity_scope:2131034150 used because it matches string pool constant android
 Marking attr:shortcutMatchRequired:2130771993 used because it matches string pool constant short
+Marking attr:clearTop:2130771972 used because it matches string pool constant clear
 Marking attr:secondaryActivityName:2130771992 used because it matches string pool constant secondaryActivityName
 Marking id:info:2131034158 used because it matches string pool constant info
 Marking attr:primaryActivityName:2130771989 used because it matches string pool constant primaryActivity
@@ -1396,7 +1413,7 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 @attr/activityName : reachable=true
 @attr/alpha : reachable=false
 @attr/alwaysExpand : reachable=false
-@attr/clearTop : reachable=false
+@attr/clearTop : reachable=true
 @attr/finishPrimaryWithSecondary : reachable=false
 @attr/finishSecondaryWithPrimary : reachable=false
 @attr/font : reachable=false
@@ -1608,6 +1625,7 @@ Marking id:line3:2131034161 used because it matches string pool constant line
 The root reachable resources are:
  attr:activityAction:2130771968
  attr:activityName:2130771969
+ attr:clearTop:2130771972
  attr:primaryActivityName:2130771989
  attr:queryPatterns:2130771990
  attr:secondaryActivityAction:2130771991

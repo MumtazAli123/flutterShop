@@ -28,21 +28,24 @@ class IconsAvatarScreen extends StatelessWidget {
                     Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        _buildImageAvatar('Jazz', './assets/images/jazz.png', () { }),
-                        _buildImageAvatar('Ufone', './assets/images/ufone.png', () { }),
-
+                        _buildImageAvatar('Telenor', './assets/images/telenor.png', () {
+                          Navigator.pushNamed(context, '/telenor');
+                        }),
+                        _buildImageAvatar('Ufone', './assets/images/ufone.png', () {
+                          Navigator.pushNamed(context, '/ufone');
+                        }),
                       ],
                     ),
                     const SizedBox(height: 20,),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        _buildImageAvatar('Telenor', './assets/images/telenor.png', () {
-                          Navigator.pushNamed(context, '/mobile');
+                        _buildImageAvatar('Zong', './assets/images/zong.png', () {
+                          Navigator.pushNamed(context, '/zong');
                         }),
-                        _buildImageAvatar('Zong', './assets/images/zong.png', () { }),
-
-
+                        _buildImageAvatar('Jazz', './assets/images/jazz.png', () {
+                          Navigator.pushNamed(context, '/jazz');
+                        }),
                       ],
                     ),
                   ],
@@ -162,6 +165,7 @@ class IconsAvatarScreen extends StatelessWidget {
           child: InkWell(
            onTap: onTap,
             child: CircleAvatar(
+              radius: 27,
               backgroundImage: AssetImage(image),
             ),
 

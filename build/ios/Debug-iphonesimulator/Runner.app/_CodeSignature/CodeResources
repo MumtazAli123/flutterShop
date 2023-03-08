@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		t/B1AQFo76c1FvvpI+azVodCM+s=
+		Z5Y8i64PXr8Ch1alfShk6HWL67k=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gR5DqbaowbK7RcYVIQwNu5T+7So=
+		/ZWeu2srahykN9kzli+462wtydQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		8eOGrmFMKSAuFJEDuUD0j4Fv1L4=
+		iwJWOJbDHI/ijMpmHAjG0zxSn+Y=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		/aAGVWHyBhRf5u4EMWnyqfH/J8E=
+		cmd9tWetHV3DWp4243GRoqSK5cU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		iq1OQUlNm/hpPN4KaFMHW8d3yj0=
+		ovs8XnTtnWHuX0PU8iR6zF9/buA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
 		<data>
@@ -84,6 +84,22 @@
 		<data>
 		ENi/Nv3yein3t2RiGqwdj5Pbg7c=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/jazz.png</key>
+		<data>
+		yFKhvmnNGAJk42N4bvrGhWf71/g=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/telenor.png</key>
+		<data>
+		DlYQPLWqZJ5D4pAC9G3JQkwj+HA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/ufone.png</key>
+		<data>
+		mypDD3ZrOtMS30OqSJS8y4fQsQY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/zong.png</key>
+		<data>
+		ggZcW/mjKHITb/PY7RiECc5+LZ4=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -94,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		r4F24hIQPRnE6sWtaW2C0it7/gY=
+		VX/U6cRMVRNRE2eST9KL8U6l7Qc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -397,7 +413,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8R6MQaFcjl4Qi69H7aDRG9vniqkXb+forEyHEBq743E=
+			0pBKCtVAwoyqk7WLN8e85MNUZsbTdic70XkTUK4SO2M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -411,21 +427,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFKm3C6VqkDKWYb7DvkJztc82SWWsWlE1PGOQmMO69Q=
+			GBdDQXfNxMUfEEKinks3TBAxS4RigHW0HzmigFh/KoM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZObPCMhUxMpdPrekKsX8GzkMNgiVCvnoHyXMfiLfFw=
+			nBW8qkMK76EhXKhSc8yLMkPkCd/AWDogSIMsRNHlY9Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L+VeE7wC5RwhRh7dbtDKbbgJ8m+hykLS3qASG7ceRM4=
+			7P194BtyVnGcuX5ya0KUS1sKBpn5ikGK+GMP9qJ1l5U=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -439,7 +455,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHKPfVmWXAsXiLiHkExMnYCJnm1lO6PdxSNsl4aiWHI=
+			gQrXQgh2NRFD2R3HLoxt5jA7E0vvQ/zrlKuBG2KFD2s=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
@@ -463,6 +479,34 @@
 			iFOvOcush9d7g+RzK3o+3D4ZXyq9OwEn2iaQJ9gc3tQ=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/jazz.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BRVDMeV0B2qxQdFiCti6R/unMU1zeZWLjAXKPmMq3fo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/telenor.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ScGu6YToXTPo4K1l2T5UKLC9q/aufh5TnEbKsh40Ukg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/ufone.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ED1fzeVOg2D50/4qiQxJfSo5To3d9vEqymDkGIk0JmM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/zong.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/XMtuwH/ZpykLeUgKKgSAZnoXzTpAE6hVcCprXEQ0ZE=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -481,7 +525,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v6K7nu9CPhLOqCZcAcYAn8E/koYiobhKJl/GUZy7vcc=
+			3e28JGziL8UNe0PYCuFFpkPVZRXhUvizcznSLMmgvro=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
