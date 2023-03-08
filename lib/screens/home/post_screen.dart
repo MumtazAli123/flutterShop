@@ -1,31 +1,37 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:nodejs/api/data/expensive_data.dart';
+import 'package:nodejs/models/photo.dart';
 import 'package:nodejs/utils/utils.dart';
 import 'package:nodejs/widgets/custom_button.dart';
 import 'package:nodejs/widgets/image_input.dart';
 import 'package:nodejs/widgets/input_widget.dart';
 import 'dart:io';
+import 'dart:async';
+import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import '../../models/expense_model.dart';
 import '../../sqlflite/sql_helper.dart';
 
 class MyPostScreen extends StatefulWidget {
   const MyPostScreen({Key? key}) : super(key: key);
-
   @override
   State<MyPostScreen> createState() => _MyPostScreenState();
 }
 
 class _MyPostScreenState extends State<MyPostScreen> {
-  File? savedImage;
+
+  // File? savedImage;
   final _titleController = TextEditingController();
   final _desController = TextEditingController();
   List<Map<String, dynamic>> _journals = [];
   bool _isLoading = true;
 
+  final String title = "Image Post ";
+    late Future <XFile> savedImage;
+
   void savedImages(File image) {
-    savedImage = image;
+    savedImage = image as Future<XFile>;
   }
   // ignore: non_constant_identifier_names
   void Save() {
@@ -36,8 +42,6 @@ class _MyPostScreenState extends State<MyPostScreen> {
     Provider.of<ExpensiveData>(context, listen: false)
         .addNewExpensive(newExpense);
   }
-
-
   void onSave() {
     if (_titleController.text.isEmpty ||
         _desController.text.isEmpty ||
@@ -154,15 +158,23 @@ class _MyPostScreenState extends State<MyPostScreen> {
 
   _buildAppBar() {
     return AppBar(
-      actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.add))],
+
+      actions: [IconButton(onPressed: () {
+      }, icon: const Icon(Icons.add))],
       centerTitle: true,
       // backgroundColor: Colors.transparent,
       elevation: 0,
-      title: const Text("Post"),
+      title: Text(title),
     );
   }
 
   _buildBody() {
-    return const Center();
+    return  const Center(
+      child: Column(
+        children: <Widget>[
+         Text('data'),
+        ],
+      ),
+    );
   }
 }

@@ -2,6 +2,7 @@ import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class Utils {
   // ignore: constant_identifier_names
@@ -67,6 +68,12 @@ class Utils {
             message,
             style: const TextStyle(fontSize: 24),
           )),
+    );
+  }
+  static slidingUpPanel(BuildContext context, String body, String appbar){
+    return SlidingUpPanel(
+      body: const Column(),
+
     );
   }
 }

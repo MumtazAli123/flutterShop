@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		IE1ByV89tfZDemxhvSf5yX6FHME=
+		t/B1AQFo76c1FvvpI+azVodCM+s=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		wKozZA9rqvWjmzo4fKR93YNQvEE=
+		gR5DqbaowbK7RcYVIQwNu5T+7So=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		1xhMLnZbnKQoAqQD1Wm6NeGTytc=
+		iq1OQUlNm/hpPN4KaFMHW8d3yj0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		lmt7XThs9fr/Nl+cUN2QYfa8fMc=
+		r4F24hIQPRnE6sWtaW2C0it7/gY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Frameworks/FMDB.framework/FMDB</key>
 		<data>
-		p0wDICUS2svqCZ7K+4Anc1Qgrv0=
+		wW+CBxvN4xaB6eEj2XhKS5wMIBE=
 		</data>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
 		<data>
@@ -288,6 +288,18 @@
 		<data>
 		xQezeCEO1eYolhqVsU5gc/qar2c=
 		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<data>
+		BWhj3Uty+uO4gYIICMHohnMd7lE=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		UtSqa5k9ZsYNsfcvwW2WHatbFgw=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<data>
+		WXpvZT4D5ogiIRzdMFMo3vTLIM0=
+		</data>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<data>
 		tgpxKTQimQe8NIFvBzVLgl5vTKc=
@@ -298,7 +310,7 @@
 		</data>
 		<key>Frameworks/sqflite.framework/sqflite</key>
 		<data>
-		9/5XxEZOMN7GgMJuP5jKGtCezaA=
+		ibtUFtH/Cb7S2L99yVPohaYRN2o=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -385,7 +397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLimBeg44OOvPOrxXrrQ9Ll8hFd0+jTZRRcuF05jAXc=
+			8R6MQaFcjl4Qi69H7aDRG9vniqkXb+forEyHEBq743E=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -399,7 +411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zeTQ/2kMyrUXTQYrpNbkv+5oAt+H9VGGkH5P/FU0bI0=
+			hFKm3C6VqkDKWYb7DvkJztc82SWWsWlE1PGOQmMO69Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -427,7 +439,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TCAkTTIwkykFXKPeFRLsfU9nrzbPVR4IKbewLFALywE=
+			SHKPfVmWXAsXiLiHkExMnYCJnm1lO6PdxSNsl4aiWHI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
@@ -469,7 +481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3elHyQyrPRrzkckjQnHrYNVSLRej2lXsTQthxW7Bzjk=
+			v6K7nu9CPhLOqCZcAcYAn8E/koYiobhKJl/GUZy7vcc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
@@ -602,7 +614,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZ65jSmmG2nXxJxIkAaXsaaJmfH173Xnq8wQzyhU0TY=
+			6G9HQcXfa16dE/e4sLLsC1rw7+hmVsSBpOqjC6bQWQA=
 			</data>
 		</dict>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
@@ -808,6 +820,27 @@
 			R0/Mtqf+3H1LKfPAgbBjBBODfdTioJeOREX1IoVYDaw=
 			</data>
 		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G3B4aEymQqORkTggHzYTSwBOKjQTERCEMeXmPUsGnik=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PFdA6adzsPUcoRV0eJpmpcFNFba2afVe6FWtlkt28yY=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ycuP9yDQ2n1pEqIdJ31f82Og377fVRM+f0k0nGp8maw=
+			</data>
+		</dict>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -826,7 +859,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y9wpiy/SK4UUpuhwAfQZscyTm6n5KYhzU05cXJIDjr0=
+			fzay+brF48OCcfs/Lf80y5pHi620WR+6s9VvXr1yyVI=
 			</data>
 		</dict>
 	</dict>

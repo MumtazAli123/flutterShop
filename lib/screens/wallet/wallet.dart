@@ -61,8 +61,7 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
 
             // tileColor: Vx.white,
           ),
-          _buildClipRRect()
-
+          _buildClipRRect(),
         ],
       ),
     );
@@ -119,4 +118,5 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
       ],
     ));
   }
+
 }

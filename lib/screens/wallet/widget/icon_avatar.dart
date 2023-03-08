@@ -21,7 +21,33 @@ class IconsAvatarScreen extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             _buildIconsAvatar('Mobile', Icons.phone_iphone, () {
-              Navigator.pushNamed(context, '/mobile');
+              Utils.popupAwesome(
+                  context,
+                Column(
+                  children: [
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        _buildImageAvatar('Jazz', './assets/images/jazz.png', () { }),
+                        _buildImageAvatar('Ufone', './assets/images/ufone.png', () { }),
+
+                      ],
+                    ),
+                    const SizedBox(height: 20,),
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        _buildImageAvatar('Telenor', './assets/images/telenor.png', () {
+                          Navigator.pushNamed(context, '/mobile');
+                        }),
+                        _buildImageAvatar('Zong', './assets/images/zong.png', () { }),
+
+
+                      ],
+                    ),
+                  ],
+                ),
+                      () {});
             }),
             _buildIconsAvatar('Send', Icons.send, () {
               Navigator.pushNamed(context, '/send_money');
@@ -42,21 +68,57 @@ class IconsAvatarScreen extends StatelessWidget {
               Navigator.pushNamed(context, '/utility');
             }),
             _buildIconsAvatar('Gas', Icons.gas_meter, () {
-              Navigator.pushNamed(context, '/utility');
+              Utils.popupAwesome(
+                  context,
+                  Column(
+                    children: [
+                      CustomTextField(
+                          controller: textEditingController,
+                          icon: Icons.gas_meter,
+                          hintText: 'Enter SSG Acc',
+                          keyBordType: TextInputType.number),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                    ],
+                  ),
+                  () {});
             }),
             _buildIconsAvatar('Water', Icons.water_drop_outlined, () {
-              Navigator.pushNamed(context, '/utility');
+              Utils.popupAwesome(
+                  context,
+                  Column(
+                    children: [
+                      CustomTextField(
+                          controller: textEditingController,
+                          icon: Icons.water_drop,
+                          hintText: 'Enter WatterPump Acc',
+                          keyBordType: TextInputType.number),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                    ],
+                  ),
+                  () {});
             }),
             _buildIconsAvatar('Internet', Icons.interests, () {
               Navigator.pushNamed(context, '/internet');
             }),
             _buildIconsAvatar('M-Tag', Icons.tag_faces, () {
-              Utils.popupAwesome(context, Column(
-                children: [
-                  CustomTextField(controller: textEditingController, hintText: 'Enter M-Tag Acc', keyBordType: TextInputType.number),
-                  const SizedBox(height: 20,),
-                ],
-              ), (){});
+              Utils.popupAwesome(
+                  context,
+                  Column(
+                    children: [
+                      CustomTextField(
+                          controller: textEditingController,
+                          hintText: 'Enter M-Tag Acc',
+                          keyBordType: TextInputType.number),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                    ],
+                  ),
+                  () {});
             }),
             _buildIconsAvatar('Fees', Icons.school_rounded, () {
               Navigator.pushNamed(context, '/schools');
@@ -67,29 +129,50 @@ class IconsAvatarScreen extends StatelessWidget {
           .make()
     ]);
   }
-}
 
-_buildIconsAvatar(String name, IconData icon, final void Function() onPressed) {
-  return Column(
-    children: [
-      Card(
-        elevation: 2,
-        child: IconButton(
-          onPressed: onPressed,
-          icon: Icon(
-            icon,
-            color: Colors.green,
-            size: 30,
+  _buildIconsAvatar(String name, IconData icon, final void Function() onPressed) {
+    return Column(
+      children: [
+        Card(
+          elevation: 2,
+          child: IconButton(
+            onPressed: onPressed,
+            icon: Icon(
+              icon,
+              color: Colors.green,
+              size: 30,
+            ),
           ),
         ),
-      ),
-      const SizedBox(
-        height: 8,
-      ),
-      Text(
-        name,
-        style: const TextStyle(color: Colors.black),
-      ),
-    ],
-  );
+        const SizedBox(
+          height: 8,
+        ),
+        Text(
+          name,
+          style: const TextStyle(color: Colors.black),
+        ),
+      ],
+    );
+  }
+  _buildImageAvatar(String text, String image, final void Function () onTap){
+    return Column(
+      children: [
+        Card(
+          elevation: 2,
+          child: InkWell(
+           onTap: onTap,
+            child: CircleAvatar(
+              backgroundImage: AssetImage(image),
+            ),
+
+          ),
+        ),
+         Text(text),
+
+      ],
+    );
+
+  }
 }
+
+
