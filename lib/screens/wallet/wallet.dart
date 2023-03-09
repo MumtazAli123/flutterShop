@@ -36,9 +36,9 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
       title: const Text(' PaySaw Wallet'),
       actions: [
         IconButton(onPressed: (){
-          Navigator.pushNamed(context, '/');
-          Utils.snackBar('Welcome Home', context);
-        }, icon: const Icon(Icons.home))
+          Navigator.of(context).pop();
+          Utils.snackBar1('Account was logout ', context);
+        }, icon: const Icon(Icons.cancel))
       ],
     );
   }
@@ -78,7 +78,7 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
       child:  SizedBox(
           child: VStack([
             _buildTabBar(),
-            const Divider(),
+
             ListTile(
               leading: const Icon(Icons.wallet, color: Colors.blue,),
               title: Visibility(

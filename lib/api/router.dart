@@ -39,8 +39,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) =>  const TelenorTopUpScreen());
     case ("/jazz"):
-      return MaterialPageRoute(
-          settings: routeSettings, builder: (_) =>  const JazzTopUpScreen());
+      return MaterialPageRoute(builder: (_)=> const JazzTopUpScreen());
     case ("/ufone"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) =>  const UfoneTopUpScreen());
@@ -73,7 +72,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
           settings: routeSettings, builder: (_) => const SchoolsScreen());
     case ("/post"):
       return MaterialPageRoute(
-          settings: routeSettings, builder: (_) => const MyPostScreen());
+          settings: routeSettings, builder: (_) => const BookingScreen());
 
     default:
       return MaterialPageRoute(

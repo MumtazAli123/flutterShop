@@ -150,7 +150,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
               width: 150,
               child: ElevatedButton.icon(
                 onPressed: () => Navigator.pushNamed(context, '/post'),
-                label: const Text('Add'),
+                label: const Text('Booking me'),
                 icon: const Icon(Icons.add),
               ),
             ),

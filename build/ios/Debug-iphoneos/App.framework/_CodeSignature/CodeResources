@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		iwJWOJbDHI/ijMpmHAjG0zxSn+Y=
+		Ex9ELNAcA0DJtYJqRjWjazGyh7Y=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		cmd9tWetHV3DWp4243GRoqSK5cU=
+		dEwk5m3cWHNmROkgkETiC7Iyuxo=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -23,6 +23,14 @@
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
 		ovs8XnTtnWHuX0PU8iR6zF9/buA=
+		</data>
+		<key>flutter_assets/assets/images/airline.jpeg</key>
+		<data>
+		UZur4fhtCM6uEmx+6pav+oDer0M=
+		</data>
+		<key>flutter_assets/assets/images/airlines.jpeg</key>
+		<data>
+		ViFczSOD2gQlmw4bqiHFrJrHwzQ=
 		</data>
 		<key>flutter_assets/assets/images/dart.jpeg</key>
 		<data>
@@ -62,7 +70,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		CbAwRjidmrBh6VEXqtf1BNtETwM=
+		aRaE5n68PibIKC5qaMwkeuiKkSw=
 		</data>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -143,14 +151,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nBW8qkMK76EhXKhSc8yLMkPkCd/AWDogSIMsRNHlY9Q=
+			b+1i5XrCyhD0YtSzhW5aqC0BKTwUDtELAcLnK3cyosk=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7P194BtyVnGcuX5ya0KUS1sKBpn5ikGK+GMP9qJ1l5U=
+			+bccC9/4uEzWc2smIv5wggDEz77PCP7tuCB9fGj6h3k=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -165,6 +173,20 @@
 			<key>hash2</key>
 			<data>
 			gQrXQgh2NRFD2R3HLoxt5jA7E0vvQ/zrlKuBG2KFD2s=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/airline.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZuzCxpnOwJG/tnb0W/F/RkwZcVZLkPRPp0YJs1sIsBA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/airlines.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LHvnWwkyw9cJjxByC4+iDoU0uk3nzCymmrBp2iY3CRk=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/dart.jpeg</key>
@@ -234,7 +256,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SI63JI4Cqzqg0xTkbJCgpCAC8boBApNz/YqIfE85qp4=
+			MDhl0urL4MCOWwDIlQ2urFcLFSjDWqLEkwaQk4D5zSY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>

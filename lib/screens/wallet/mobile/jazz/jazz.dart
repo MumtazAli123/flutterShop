@@ -36,12 +36,12 @@ class _JazzTopUpScreenState extends State<JazzTopUpScreen> with SingleTickerProv
     return AppBar(
       backgroundColor: Colors.green,
       centerTitle: true,
-      title:  Text('Jazz - ${controller.index + 1}'),
+      title:  Text('Telenor - ${controller.index + 1}'),
       actions: const [
         Padding(
           padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
-            backgroundImage: AssetImage('./assets/images/jazz.png'),
+            backgroundImage: AssetImage('./assets/images/telenor.png'),
           ),
         )
       ],
