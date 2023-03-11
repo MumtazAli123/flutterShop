@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
 import 'package:nodejs/screens/home/home.dart';
-import 'package:nodejs/screens/home/post_screen.dart';
+import 'package:nodejs/screens/home/post/post_screen.dart';
 import 'package:nodejs/screens/wallet/agent.dart';
 import 'package:nodejs/screens/wallet/banking/banking.dart';
 import 'package:nodejs/screens/wallet/banking/internet.dart';
@@ -13,6 +13,7 @@ import 'package:nodejs/screens/wallet/schools/schools.dart';
 import 'package:nodejs/screens/wallet/send_money/wallet_topup.dart';
 import 'package:nodejs/screens/wallet/wallet.dart';
 import 'package:nodejs/screens/wallet/wallet_history.dart';
+import '../screens/home/post/msonary_grid.dart';
 import '../screens/wallet/banking/nolcard.dart';
 import '../screens/wallet/input4digit.dart';
 import '../screens/wallet/mobile/jazz/jazz.dart';
@@ -73,6 +74,9 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case ("/post"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const BookingScreen());
+    case ("/post1"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const ScreenMasonryGrid());
 
     default:
       return MaterialPageRoute(

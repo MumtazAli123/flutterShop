@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/screens/wallet/widget/sidebar.dart';
-import '../../../../utils/utils.dart';
-import '../../../../widgets/input_widget.dart';
-import '../../widgets/custom_button.dart';
-import '../../widgets/image_input.dart';
+import '../../../../../utils/utils.dart';
+import '../../../../../widgets/input_widget.dart';
+import '../../../widgets/custom_button.dart';
+import '../../../widgets/image_input.dart';
 import 'dart:async';
 import 'dart:io';
 
@@ -22,7 +22,7 @@ class _BookingScreenState extends State<BookingScreen>
   late final String savedImage;
 
   final title = 'Booking me';
-  final urlImage = './assets/images/airline.jpeg';
+  final urlImage = './assets/images/dart1.jpeg';
 
   void savedImages() {}
   @override
@@ -60,7 +60,7 @@ class _BookingScreenState extends State<BookingScreen>
           padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             radius: 20,
-            backgroundImage: AssetImage('./assets/images/airline.jpeg'),
+            backgroundImage: AssetImage('./assets/images/dart1.jpeg'),
           ),
         ),
         IconButton(onPressed: (){
@@ -104,7 +104,9 @@ class _BookingScreenState extends State<BookingScreen>
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, i){
           return GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/post1');
+              },
           child: Container(
           width: 200,
           height: 300,
@@ -113,7 +115,7 @@ class _BookingScreenState extends State<BookingScreen>
           decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           image: const DecorationImage(
-          image: AssetImage("./assets/images/airline.jpeg"),
+          image: AssetImage("./assets/images/dart3.jpeg"),
           fit: BoxFit.fitHeight),
           ))
           );
@@ -125,20 +127,23 @@ class _BookingScreenState extends State<BookingScreen>
     return ListView.builder(
         itemCount: 5,
         scrollDirection: Axis.horizontal,
-        itemBuilder: (_, i){
+        itemBuilder: (_, index,){
           return GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/post1');
+              },
               child: Container(
                   width: 200,
                   height: 300,
-                  margin: const EdgeInsets.only(
+                  margin:  const EdgeInsets.only(
                       right: 10, top: 10, bottom: 0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    image: const DecorationImage(
-                        image: AssetImage("./assets/images/Daewoo.jpeg"),
-                        fit: BoxFit.fitHeight),
-                  ))
+                    image:  DecorationImage(
+                        image: AssetImage('./assets/images/dart${index + 1}.jpeg',), fit: BoxFit.fill,),
+                    // fit: BoxFit.fitHeight),
+                  ), child: const Text('Name'),
+              )
           );
         });
   }
@@ -158,7 +163,7 @@ class _BookingScreenState extends State<BookingScreen>
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                        image: AssetImage("./assets/images/peoples.gif", ),
+                        image: AssetImage("./assets/images/dart1.jpeg", ),
                         fit: BoxFit.cover, ),
                   ))
           );
