@@ -14,7 +14,7 @@ class ImageInputScreen extends StatefulWidget {
 }
 
 class _ImageInputScreenState extends State<ImageInputScreen> {
-  final urlImage = "https://imglarger.com/Images/before-after/ai-image-enlarger-1-after-2.jpg";
+  final urlImage = "https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg";
   bool isFile = false;
   File? _imageFile;
   late Uint8List memoryImage;
