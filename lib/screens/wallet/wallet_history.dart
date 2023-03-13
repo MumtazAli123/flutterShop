@@ -1,9 +1,8 @@
 // ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../api/data/expensive_data.dart';
 import '../../constants/list_tile.dart';
+import '../../models/data/expensive_data.dart';
 import '../../utils/utils.dart';
 
 class WalletHistoryScreen extends StatelessWidget {
@@ -22,7 +21,7 @@ class WalletHistoryScreen extends StatelessWidget {
     );
   }
   _buildBody(){
-    return Consumer<ExpensiveData>(
+    return Consumer<ExpensiveDataModel>(
         builder: (context, value, child) => ListView(
           children: [
             const SizedBox(

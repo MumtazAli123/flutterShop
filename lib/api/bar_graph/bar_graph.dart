@@ -1,5 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+// ignore: implementation_imports
+import 'package:flutter/src/foundation/diagnostics.dart';
 import 'package:nodejs/api/bar_graph/bar_data.dart';
 
 class MyBarGraph extends StatelessWidget {
@@ -70,15 +72,15 @@ class MyBarGraph extends StatelessWidget {
   }
   get text => null;
 
-  Widget getBottomTiles(double value, TitleMeta meta){
+  Diagnosticable getBottomTiles(double value, TitleMeta meta){
 
     const style = TextStyle(
       color:  Colors.grey,
       fontWeight: FontWeight.bold,
       fontSize: 14,
     );
-
-    return SideTitleWidget(child: text, axisSide: meta.axisSide);
+    return style;
+    // return SideTitleWidget(child: text, axisSide: meta.axisSide);
   }
 
 }

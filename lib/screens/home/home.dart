@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:nodejs/api/data/hive_database.dart';
 import 'package:nodejs/constants/expensive_summary.dart';
 import 'package:nodejs/constants/list_tile.dart';
 import 'package:nodejs/widgets/input_widget.dart';
 import 'package:provider/provider.dart';
-import '../../api/data/expensive_data.dart';
 import '../../features/auth/auth_screen.dart';
+import '../../models/data/expensive_data.dart';
+import '../../models/data/hive_database.dart';
 import '../../models/expense_model.dart';
 import '../../sqlflite/sql_helper.dart';
 import '../../utils/utils.dart';
@@ -30,7 +30,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   void initState() {
     super.initState();
     //  prepare Data
-    Provider.of<ExpensiveData>(context, listen: false).prepareData();
+    Provider.of<ExpensiveDataModel>(context, listen: false).prepareData();
     _refreshJournals();
     updateItem();
     if (kDebugMode) {
@@ -57,7 +57,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   Future<void> deleteExpenseItem(ExpensiveItem expense) async {
-    Provider.of<ExpensiveData>(context, listen: false).deleteExpensive(expense);
+    Provider.of<ExpensiveDataModel>(context, listen: false).deleteExpensive(expense);
     Utils.snackBar1('Delete SuccessFully', context);
   }
 
@@ -70,7 +70,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
           title: _titleController.text,
           amount: amount,
           dateTime: DateTime.now());
-      Provider.of<ExpensiveData>(context, listen: false)
+      Provider.of<ExpensiveDataModel>(context, listen: false)
           .addNewExpensive(newExpense);
       clear();
     }
@@ -184,7 +184,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   _buildBody() {
-    return Consumer<ExpensiveData>(
+    return Consumer<ExpensiveDataModel>(
         builder: (context, value, child) => ListView(
               children: [
                 const SizedBox(

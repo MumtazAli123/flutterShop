@@ -20,6 +20,8 @@ import '../screens/wallet/banking/nolcard.dart';
 import '../screens/wallet/input4digit.dart';
 import '../screens/wallet/mobile/jazz/jazz.dart';
 import '../screens/wallet/send_money/send_money.dart';
+import 'dart:async';
+import 'dart:io';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
@@ -78,14 +80,15 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
           settings: routeSettings, builder: (_) => const BookingScreen());
     case ("/post1"):
       return MaterialPageRoute(
-          settings: routeSettings, builder: (_) => const ScreenMasonryGrid());
+          settings: routeSettings, builder: (_) => const ScreenMasGrid());
+
     case ("/cart"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const CartScreen());
+
     case ("/airline"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const ScreenAirlineGrid());
-
     default:
       return MaterialPageRoute(
           builder: (_) => const Scaffold(

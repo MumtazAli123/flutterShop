@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:nodejs/api/data/expensive_data.dart';
-import 'package:nodejs/features/cart_provider.dart';
 import 'package:nodejs/models/cart_models.dart';
-import 'package:nodejs/screens/home/post/bus_ticket/cart_screen.dart';
 import 'package:nodejs/sqlflite/data/db_helper.dart';
-import '../../../../api/data/hive_database.dart';
+import '../../../../models/data/expensive_data.dart';
+import '../../../../models/data/hive_database.dart';
 import '../../../../utils/utils.dart';
-import 'package:path/path.dart';
 import 'package:provider/provider.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:badges/badges.dart' as badges;
 
-class ScreenMasonryGrid extends StatefulWidget {
-  const ScreenMasonryGrid({Key? key}) : super(key: key);
+class ScreenMasGrid extends StatefulWidget {
+  const ScreenMasGrid({Key? key}) : super(key: key);
 
   @override
-  State<ScreenMasonryGrid> createState() => _ScreenMasonryGridState();
+  State<ScreenMasGrid> createState() => _ScreenMasGridState();
 }
 
-class _ScreenMasonryGridState extends State<ScreenMasonryGrid> {
+class _ScreenMasGridState extends State<ScreenMasGrid> {
   DBHelper? dbHelper = DBHelper();
-  HiveDataBase db = HiveDataBase();
+  HiveDataBase? db = HiveDataBase();
   List<String> productName = [
     ' Daewoo Express  ',
     'Faisal Movers  ',
@@ -30,12 +26,13 @@ class _ScreenMasonryGridState extends State<ScreenMasonryGrid> {
     'A K C EXPRESS',
     'KAINAT TRAVELS',
   ];
+
   List<int> productPrice = [200, 330, 990, 1100, 1200, 600];
 
   void onSave(BuildContext context, index) {
-    final cart = Provider.of<ExpensiveData>(context, listen: false);
-    cart.addTotalPrice(double.parse(productPrice[index].toString()));
-    cart.addCounter();
+    final cart = Provider.of<ExpensiveDataModel>(context, listen: false);
+    cart.addCounter(double.parse(productPrice[index].toString()));
+    cart.addCounter(double as double );
   }
 
   @override
@@ -56,7 +53,7 @@ class _ScreenMasonryGridState extends State<ScreenMasonryGrid> {
           child: Padding(
             padding: const EdgeInsets.all(18.0),
             child: badges.Badge(
-                badgeContent: Consumer<ExpensiveData>(
+                badgeContent: Consumer<ExpensiveDataModel>(
                   builder: (context, value, child) {
                     return  Text(
                       value.getCounter().toString(),
@@ -105,7 +102,7 @@ class _ScreenMasonryGridState extends State<ScreenMasonryGrid> {
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
                         onTap: () {
-                          dbHelper?.insert(Cart(
+                          db?.insert(Cart(
                                   id: index,
                                   productId: index.toString(),
                                   productName: productName[index].toString(),
@@ -138,6 +135,4 @@ class _ScreenMasonryGridState extends State<ScreenMasonryGrid> {
               ),
             ));
   }
-
-  _buildGridView() {}
 }

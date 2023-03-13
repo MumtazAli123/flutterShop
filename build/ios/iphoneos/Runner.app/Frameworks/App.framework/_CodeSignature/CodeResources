@@ -10,11 +10,19 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
+<<<<<<< HEAD
 		BNQA9VjmsiAM1UI8fO0HfX/93Mo=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
 		wJ1lr+Td90gcFgltYyEzeHT1xso=
+=======
+		XPl5xPL4ZUTqTc7VTU6VNV2hKYE=
+		</data>
+		<key>flutter_assets/AssetManifest.json</key>
+		<data>
+		nVtthuj8j7Cbh3MRdUC9BzI1xL0=
+>>>>>>> 2e50ea504d35423f9a9802a91f9e96e345bd9a27
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -23,6 +31,14 @@
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
 		BdrLA2LuOWlTDs2amaHrpn+gyR8=
+		</data>
+		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
+		<data>
+		qICIcvvuDZwZlNROfgYH3ZqIxuU=
+		</data>
+		<key>flutter_assets/assets/images/Peoples.jpeg</key>
+		<data>
+		b75WtvNwQLstK6OleczbPQDSA6E=
 		</data>
 		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
 		<data>
@@ -44,6 +60,10 @@
 		<data>
 		GV9eQ7+4IQhi1wtIQUZGy19cABI=
 		</data>
+		<key>flutter_assets/assets/images/dart1.jpeg</key>
+		<data>
+		b75WtvNwQLstK6OleczbPQDSA6E=
+		</data>
 		<key>flutter_assets/assets/images/dart2.jpeg</key>
 		<data>
 		8jrgDYBh0YV647JGqzV/bBWg8TA=
@@ -51,6 +71,10 @@
 		<key>flutter_assets/assets/images/dart3.jpeg</key>
 		<data>
 		ENi/Nv3yein3t2RiGqwdj5Pbg7c=
+		</data>
+		<key>flutter_assets/assets/images/dart6.jpeg</key>
+		<data>
+		ViFczSOD2gQlmw4bqiHFrJrHwzQ=
 		</data>
 		<key>flutter_assets/assets/images/jazz.png</key>
 		<data>
@@ -86,7 +110,11 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
+<<<<<<< HEAD
 		M8/9fd1c/OesCB8E0m91JaWlIhw=
+=======
+		9pFhkB9TnLHcqf4K/xg4dqT/lmk=
+>>>>>>> 2e50ea504d35423f9a9802a91f9e96e345bd9a27
 		</data>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -167,14 +195,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			91A0AUNKFgi/JviMvPLyHY01YU5Q8cYJwShJ1q2yJqs=
+=======
+			ljRBqOxZFvQ26nLcyuHTDqWHb6WKk+1jInyAZ2SG6aA=
+>>>>>>> 2e50ea504d35423f9a9802a91f9e96e345bd9a27
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			GeWT4ouQ4S2Q0YMn1I+TFdXG52WVI8tts6hATA8AcJI=
+=======
+			arSkR+HTZ5IolooQazfn6qj6WLVh96B1znihFKSlq2g=
+>>>>>>> 2e50ea504d35423f9a9802a91f9e96e345bd9a27
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -189,6 +225,20 @@
 			<key>hash2</key>
 			<data>
 			PhNhKkG9HlcFLUknUhY10p60l330/1N6i7GxSMN2wgE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SCPEb6/rQadLJypSYgFy90izzvAy/r3UcBqnELQMECU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Peoples.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSRs1SmGfoKikI9SRZf6wLqvodVy22+SjqZ6JxCozd4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
@@ -226,6 +276,13 @@
 			BIqFNgCsoT4xCEEh9oUfX+EM0IpFXwFdxIw7cmFYEeA=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/dart1.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSRs1SmGfoKikI9SRZf6wLqvodVy22+SjqZ6JxCozd4=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/dart2.jpeg</key>
 		<dict>
 			<key>hash2</key>
@@ -238,6 +295,13 @@
 			<key>hash2</key>
 			<data>
 			iFOvOcush9d7g+RzK3o+3D4ZXyq9OwEn2iaQJ9gc3tQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/dart6.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LHvnWwkyw9cJjxByC4+iDoU0uk3nzCymmrBp2iY3CRk=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/jazz.png</key>
@@ -300,7 +364,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			HRm9jrMetAsbXcfEoNZPGDo4EG/TPGzkcze5K/0LLDk=
+=======
+			MkL2f0dhioUA+5VxzEcJX0GOZ7QDsUHMMS8W7xz9zdI=
+>>>>>>> 2e50ea504d35423f9a9802a91f9e96e345bd9a27
 			</data>
 		</dict>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>

@@ -50,6 +50,4 @@ class _ScreenAirlineGridState extends State<ScreenAirlineGrid> {
       ),
     ));
   }
-
-  _buildGridView(){}
 }

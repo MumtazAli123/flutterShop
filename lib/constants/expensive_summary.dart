@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:nodejs/api/bar_graph/bar_graph.dart';
-import 'package:nodejs/api/data/expensive_data.dart';
 import 'package:nodejs/sqlflite/date_time_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
+
+import '../models/data/expensive_data.dart';
 
 class ExpensiveSummary extends StatelessWidget {
   final DateTime startOfWeek;
@@ -11,7 +12,7 @@ class ExpensiveSummary extends StatelessWidget {
       : super(key: key);
   // list graph
   double calculateMax(
-      ExpensiveData value,
+      ExpensiveDataModel value,
       String sunday,
       String monday,
       String tuesday,
@@ -38,7 +39,7 @@ class ExpensiveSummary extends StatelessWidget {
   // calculate week total
 
   String calculateWeekTotal(
-      ExpensiveData value,
+      ExpensiveDataModel value,
       String sunday,
       String monday,
       String tuesday,
@@ -78,7 +79,7 @@ class ExpensiveSummary extends StatelessWidget {
         convertDateTimeToString(startOfWeek.add(const Duration(days: 5)));
     String saturday =
         convertDateTimeToString(startOfWeek.add(const Duration(days: 6)));
-    return Consumer<ExpensiveData>(
+    return Consumer<ExpensiveDataModel>(
         builder: (context, value, child) => Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(

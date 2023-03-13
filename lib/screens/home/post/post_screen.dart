@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:nodejs/screens/wallet/widget/sidebar.dart';
 import '../../../../../utils/utils.dart';
 import '../../../../../widgets/input_widget.dart';
@@ -23,7 +22,7 @@ class _BookingScreenState extends State<BookingScreen>
   late final String savedImage;
 
   final title = 'Booking me';
-  final urlImage = './assets/images/airline.jpeg';
+  final urlImage = './assets/images/dart1.jpeg';
 
   void savedImages() {}
   @override
@@ -46,6 +45,14 @@ class _BookingScreenState extends State<BookingScreen>
         appBar: _buildAppBar(),
         body: _buildBody(),
         drawer: const SideBarScreen(),
+    floatingActionButton: FloatingActionButton(
+      backgroundColor: Colors.orange,
+      child: const Icon(Icons.add),
+      onPressed: () {
+      _buildBottomButton();
+    },
+
+    ),
       );
 
   _buildAppBar() {
@@ -61,7 +68,7 @@ class _BookingScreenState extends State<BookingScreen>
           padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             radius: 20,
-            backgroundImage: AssetImage('./assets/images/dart2.jpeg'),
+            backgroundImage: AssetImage('./assets/images/dart.jpeg'),
           ),
         ),
         IconButton(onPressed: (){
@@ -98,11 +105,38 @@ class _BookingScreenState extends State<BookingScreen>
       ],
     );
   }
+
+  _buildPaidLoad() {
+    return ListView.builder(
+      itemCount: 5,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (_, i){
+          return GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/post1');
+              },
+          child: Container(
+          width: 200,
+          height: 300,
+          margin: const EdgeInsets.only(
+          right: 10, top: 10, bottom: 0),
+          decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          image: const DecorationImage(
+          image: AssetImage("./assets/images/dart3.jpeg"),
+          fit: BoxFit.fitHeight),
+          ))
+          );
+        });
+
+  }
+
+
   _buildPackageLoad() {
     return ListView.builder(
         itemCount: 5,
         scrollDirection: Axis.horizontal,
-        itemBuilder: (_, index){
+        itemBuilder: (_, index,){
           return GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/post1');
@@ -110,15 +144,16 @@ class _BookingScreenState extends State<BookingScreen>
               child: Container(
                   width: 200,
                   height: 300,
-                  margin: const EdgeInsets.only(
+                  margin:  const EdgeInsets.only(
                       right: 10, top: 10, bottom: 0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image:  DecorationImage(
+
                         image: AssetImage('./assets/images/dart${index + 1}.jpeg',),
                         fit: BoxFit.fitHeight),
-                  ))
-          );
+                  )));
+
         });
   }
 
@@ -136,35 +171,11 @@ class _BookingScreenState extends State<BookingScreen>
                       right: 10, top: 10, bottom: 0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
+
                     image:  DecorationImage(
                         image: AssetImage('./assets/images/peoples${index + 1}.jpeg',),
-                        fit: BoxFit.cover, ),
                   ))
-          );
-        });
-  }
-
-  _buildPaidLoad() {
-    return ListView.builder(
-        itemCount: 4,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (_, index){
-          return GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, '/airline');
-              },
-              child: Container(
-                  width: 300,
-                  height: 300,
-                  margin: const EdgeInsets.only(
-                      right: 10, top: 10, bottom: 0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    image:  DecorationImage(
-                        image: AssetImage('./assets/airline/airline${index + 1}.jpeg',),
-                        fit: BoxFit.cover),
-                  ))
-          );
+          ));
         });
   }
 

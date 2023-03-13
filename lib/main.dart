@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:nodejs/api/data/expensive_data.dart';
 import 'package:nodejs/api/router.dart';
 import 'package:nodejs/constants/global_varaible.dart';
 import 'package:nodejs/features/cart_provider.dart';
 import 'package:nodejs/screens/home/home.dart';
 import 'package:provider/provider.dart';
-import 'models/photo.dart';
+import 'models/data/expensive_data.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => ExpensiveData(),
+      create: (_) => ExpensiveDataModel(),
       child: Builder(builder: (BuildContext context) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,

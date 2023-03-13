@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nodejs/screens/wallet/widget/icon_avatar.dart';
 
 class PanelWidget extends StatelessWidget {
   final ScrollController controller;
