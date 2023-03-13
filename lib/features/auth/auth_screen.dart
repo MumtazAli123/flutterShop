@@ -94,11 +94,11 @@ class _AuthScreenState extends State<AuthScreen> {
   _buildAccount() {
     return ListTile(
       textColor: _auth == Auth.signup
-          ? GlobalVaraible.backgroundColor
-          : GlobalVaraible.greyBackgroundCOlor,
+          ? GlobalVariable.backgroundColor
+          : GlobalVariable.greyBackgroundColor,
       title: const Text('Create Account '),
       leading: Radio(
-          activeColor: GlobalVaraible.secondaryColor,
+          activeColor: GlobalVariable.secondaryColor,
           value: Auth.signup,
           groupValue: _auth,
           onChanged: (Auth? val) {
@@ -155,11 +155,11 @@ class _AuthScreenState extends State<AuthScreen> {
   _buildSignIn() {
     return ListTile(
       textColor: _auth == Auth.signIn
-          ? GlobalVaraible.backgroundColor
-          : GlobalVaraible.greyBackgroundCOlor,
+          ? GlobalVariable.backgroundColor
+          : GlobalVariable.greyBackgroundColor,
       title: const Text(' Account sign-in'),
       leading: Radio(
-          activeColor: GlobalVaraible.secondaryColor,
+          activeColor: GlobalVariable.secondaryColor,
           value: Auth.signIn,
           groupValue: _auth,
           onChanged: (Auth? val) {

@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/Users/sindhi/Desktop/nodejs/nodejs/android@@:shared_preferences_android::release"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/shared_preferences_android/.transforms/b2ca9be533c9b9857f07517782bdfa7f/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/nodejs/nodejs/build/shared_preferences_android/.transforms/b2ca9be533c9b9857f07517782bdfa7f/transformed/out/jars/libs/R.jar"
+      name="/Users/sindhi/Desktop/firebase/nodejs/android@@:shared_preferences_android::release"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/shared_preferences_android/.transforms/64f7f592a8c065a8a441c7a2cb9dc060/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/firebase/nodejs/build/shared_preferences_android/.transforms/64f7f592a8c065a8a441c7a2cb9dc060/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.sharedpreferences:shared_preferences_android:unspecified"
-      folder="/Users/sindhi/Desktop/nodejs/nodejs/build/shared_preferences_android/.transforms/b2ca9be533c9b9857f07517782bdfa7f/transformed/out"
+      folder="/Users/sindhi/Desktop/firebase/nodejs/build/shared_preferences_android/.transforms/64f7f592a8c065a8a441c7a2cb9dc060/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/sindhi/Desktop/nodejs/nodejs/android@@:flutter_plugin_android_lifecycle::release"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/.transforms/da1fe551de1eae7ff38c5623f715f7b8/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/.transforms/da1fe551de1eae7ff38c5623f715f7b8/transformed/out/jars/libs/R.jar"
+      name="/Users/sindhi/Desktop/firebase/nodejs/android@@:flutter_plugin_android_lifecycle::release"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/flutter_plugin_android_lifecycle/.transforms/131345383f4f2e1dc1ae042ebfb413cd/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/firebase/nodejs/build/flutter_plugin_android_lifecycle/.transforms/131345383f4f2e1dc1ae042ebfb413cd/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.flutter_plugin_android_lifecycle:flutter_plugin_android_lifecycle:unspecified"
-      folder="/Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/.transforms/da1fe551de1eae7ff38c5623f715f7b8/transformed/out"
+      folder="/Users/sindhi/Desktop/firebase/nodejs/build/flutter_plugin_android_lifecycle/.transforms/131345383f4f2e1dc1ae042ebfb413cd/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/sindhi/Desktop/nodejs/nodejs/android@@:sqflite::release"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/.transforms/1e3fe5e53474dd2539f6381f5100f588/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/.transforms/1e3fe5e53474dd2539f6381f5100f588/transformed/out/jars/libs/R.jar"
+      name="/Users/sindhi/Desktop/firebase/nodejs/android@@:sqflite::release"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/sqflite/.transforms/fd98444eb507f9cde4921bb26cee38a4/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/firebase/nodejs/build/sqflite/.transforms/fd98444eb507f9cde4921bb26cee38a4/transformed/out/jars/libs/R.jar"
       resolved="com.tekartik.sqflite:sqflite:unspecified"
-      folder="/Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/.transforms/1e3fe5e53474dd2539f6381f5100f588/transformed/out"
+      folder="/Users/sindhi/Desktop/firebase/nodejs/build/sqflite/.transforms/fd98444eb507f9cde4921bb26cee38a4/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/sindhi/Desktop/nodejs/nodejs/android@@:path_provider_android::release"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/path_provider_android/.transforms/5cddd806969aa64959c6db35e68a92f7/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/nodejs/nodejs/build/path_provider_android/.transforms/5cddd806969aa64959c6db35e68a92f7/transformed/out/jars/libs/R.jar"
+      name="/Users/sindhi/Desktop/firebase/nodejs/android@@:path_provider_android::release"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/path_provider_android/.transforms/7532d968db1ccddd57e008477d9edf16/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/firebase/nodejs/build/path_provider_android/.transforms/7532d968db1ccddd57e008477d9edf16/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/Users/sindhi/Desktop/nodejs/nodejs/build/path_provider_android/.transforms/5cddd806969aa64959c6db35e68a92f7/transformed/out"
+      folder="/Users/sindhi/Desktop/firebase/nodejs/build/path_provider_android/.transforms/7532d968db1ccddd57e008477d9edf16/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -56,10 +56,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/sindhi/Desktop/nodejs/nodejs/android@@:image_picker_android::release"
-      jars="/Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/.transforms/e836bab4fdd1a6d906ac55ce07c55883/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/.transforms/e836bab4fdd1a6d906ac55ce07c55883/transformed/out/jars/libs/R.jar"
+      name="/Users/sindhi/Desktop/firebase/nodejs/android@@:image_picker_android::release"
+      jars="/Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/.transforms/a2cbdf1fbb7f450f5f852c5629614485/transformed/out/jars/classes.jar:/Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/.transforms/a2cbdf1fbb7f450f5f852c5629614485/transformed/out/jars/libs/R.jar"
       resolved="io.flutter.plugins.imagepicker:image_picker_android:unspecified"
-      folder="/Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/.transforms/e836bab4fdd1a6d906ac55ce07c55883/transformed/out"
+      folder="/Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/.transforms/a2cbdf1fbb7f450f5f852c5629614485/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

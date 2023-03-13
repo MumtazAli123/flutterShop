@@ -176,10 +176,10 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
             Utils.snackBar('Register new account', context);
           },
           icon: const Icon(Icons.person)) ,
-      title: const Text(
-        "Home ",
-        style: TextStyle(color: Colors.white),
-      ),
+      title:
+          Text(Utils.dayTime(DateTime.now())),
+        // /style: const TextStyle(color: Colors.white),
+
     );
   }
 

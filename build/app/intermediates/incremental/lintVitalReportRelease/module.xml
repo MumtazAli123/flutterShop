@@ -1,11 +1,11 @@
 <lint-module
     format="1"
-    dir="/Users/sindhi/Desktop/nodejs/nodejs/android/app"
+    dir="/Users/sindhi/Desktop/firebase/nodejs/android/app"
     name=":app"
     type="APP"
     maven="android:app:"
     gradle="7.4.1"
-    buildFolder="/Users/sindhi/Desktop/nodejs/nodejs/build/app"
+    buildFolder="/Users/sindhi/Desktop/firebase/nodejs/build/app"
     bootClassPath="/Users/sindhi/Library/Android/sdk/platforms/android-33/android.jar:/Users/sindhi/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-33">

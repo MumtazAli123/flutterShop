@@ -8,13 +8,48 @@ class Utils {
   // ignore: constant_identifier_names
   static const String IMG_KEY = 'IMAGE_KAY';
 
-
-
   static const Color buttonColor = Colors.green;
   static void focusChange(
       BuildContext context, FocusNode current, FocusNode nextFocus) {
     current.unfocus();
     FocusScope.of(context).requestFocus(nextFocus);
+  }
+
+  static dayTime(DateTime dateTime) {
+    switch (dateTime.hour) {
+      case 1:
+        return 'Have a smiley Morning';
+      case 2:
+        return 'Have a Nice Morning ';
+      case 3:
+        return 'Have a Nice Morning';
+      case 4:
+        return 'Have a happy day';
+      case 5:
+        return 'Have a good day';
+      case 6:
+        return 'Good Morning';
+      case 7:
+        return 'Good Morning';
+      case 8:
+        return 'have a lovely day';
+      case 9:
+        return 'have a Nice day';
+      case 11:
+        return 'Have a Good day';
+      case 12:
+        return 'Have a Good lunch time';
+      case 17:
+        return 'Good evening';
+      case 18:
+        return 'Good evening';
+      case 20:
+        return 'Good evening';
+      case 19:
+        return 'have a happy evening';
+      default:
+        return 'Have a good Time';
+    }
   }
 
   static void flushBarErrorMessage(String message, BuildContext context) {
@@ -40,7 +75,7 @@ class Utils {
         )..show(context));
   }
 
-  static popupAwesome (BuildContext context, body,  onTap){
+  static popupAwesome(BuildContext context, body, onTap) {
     return AwesomeDialog(
       context: context,
       animType: AnimType.bottomSlide,
@@ -48,16 +83,17 @@ class Utils {
       body: body,
       btnOkOnPress: onTap,
     )..show();
-
   }
 
-
-  static snackBar(String message, BuildContext context){
-    return ScaffoldMessenger.of(context).showSnackBar(
-
-        SnackBar(backgroundColor: Colors.green,
-            content: Text(message, style: const TextStyle(fontSize: 20, ),))
-    );
+  static snackBar(String message, BuildContext context) {
+    return ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        backgroundColor: Colors.green,
+        content: Text(
+          message,
+          style: const TextStyle(
+            fontSize: 20,
+          ),
+        )));
   }
 
   static snackBar1(String message, BuildContext context) {
@@ -70,11 +106,10 @@ class Utils {
           )),
     );
   }
-  static slidingUpPanel(BuildContext context, String body, String appbar){
+
+  static slidingUpPanel(BuildContext context, String body, String appbar) {
     return SlidingUpPanel(
       body: const Column(),
-
     );
   }
 }
-

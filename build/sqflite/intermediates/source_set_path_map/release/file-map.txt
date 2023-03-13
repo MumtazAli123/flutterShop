@@ -4,9 +4,9 @@ com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-2 /Users/sindhi/.gradle/c
 com.tekartik.sqflite-core-1.6.0-3 /Users/sindhi/.gradle/caches/transforms-3/d5ffcd9b721cd182e1600a8c0b387ddb/transformed/core-1.6.0/res
 com.tekartik.sqflite-main-4 /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/android/src/main/res
 com.tekartik.sqflite-release-5 /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/android/src/release/res
-com.tekartik.sqflite-pngs-6 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/pngs/release
-com.tekartik.sqflite-resValues-7 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/resValues/release
-com.tekartik.sqflite-rs-8 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/generated/res/rs/release
-com.tekartik.sqflite-mergeReleaseResources-9 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/merged.dir
-com.tekartik.sqflite-mergeReleaseResources-10 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-com.tekartik.sqflite-merged_res-11 /Users/sindhi/Desktop/nodejs/nodejs/build/sqflite/intermediates/merged_res/release
+com.tekartik.sqflite-pngs-6 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/generated/res/pngs/release
+com.tekartik.sqflite-resValues-7 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/generated/res/resValues/release
+com.tekartik.sqflite-rs-8 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/generated/res/rs/release
+com.tekartik.sqflite-mergeReleaseResources-9 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.tekartik.sqflite-mergeReleaseResources-10 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.tekartik.sqflite-merged_res-11 /Users/sindhi/Desktop/firebase/nodejs/build/sqflite/intermediates/merged_res/release

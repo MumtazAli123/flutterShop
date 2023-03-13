@@ -1,12 +1,15 @@
 import 'package:flutter/foundation.dart';
+import 'package:googleapis/securitycenter/v1.dart';
 import 'package:nodejs/models/photo.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 import 'dart:async';
 import 'dart:io' as io;
+import 'package:nodejs/models/cart_models.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 
 class SQLHelper {
+  static Database? _db;
 
   static Future<void> createTable(sql.Database database) async {
     await database.execute("""Create Table items(

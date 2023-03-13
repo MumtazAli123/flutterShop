@@ -4,9 +4,9 @@
     minSdkVersion="16"
     targetSdkVersion="33"
     shrinking="true"
-    mergedManifest="/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
-    proguardFiles="/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.4.1:/Users/sindhi/Documents/flutterDev/sdk/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
-    partialResultsDir="/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/lint_vital_partial_results/release/out"
+    mergedManifest="/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    proguardFiles="/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.4.1:/Users/sindhi/Documents/flutterDev/sdk/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/lint_vital_partial_results/release/out"
     desugaredMethodsFiles="/Users/sindhi/.gradle/caches/transforms-3/28a39e21e138d76d819834c31e8d33a6/transformed/D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
@@ -32,9 +32,9 @@
         value="android.app.Application" />
   </manifestPlaceholders>
   <mainArtifact
-      classOutputs="/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/javac/release/classes:/Users/sindhi/Desktop/nodejs/nodejs/build/app/tmp/kotlin-classes/release:/Users/sindhi/Desktop/nodejs/nodejs/build/app/kotlinToolingMetadata:/Users/sindhi/Desktop/nodejs/nodejs/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      classOutputs="/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/javac/release/classes:/Users/sindhi/Desktop/firebase/nodejs/build/app/tmp/kotlin-classes/release:/Users/sindhi/Desktop/firebase/nodejs/build/app/kotlinToolingMetadata:/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
       applicationId="com.example.nodejs"
-      generatedSourceFolders="/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/ap_generated_sources/release/out:/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/aidl_source_output_dir/release/out:/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/source/buildConfig/release:/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/renderscript_source_output_dir/release/out"
-      generatedResourceFolders="/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/res/rs/release:/Users/sindhi/Desktop/nodejs/nodejs/build/app/generated/res/resValues/release">
+      generatedSourceFolders="/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/ap_generated_sources/release/out:/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/aidl_source_output_dir/release/out:/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/source/buildConfig/release:/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/renderscript_source_output_dir/release/out"
+      generatedResourceFolders="/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/res/rs/release:/Users/sindhi/Desktop/firebase/nodejs/build/app/generated/res/resValues/release">
   </mainArtifact>
 </variant>

@@ -17,7 +17,7 @@ class SideBarScreen extends StatelessWidget {
 
               },
                 child: ClipOval(
-                  child: Image.asset('./assets/images/dart.jpeg',height: double.infinity, fit: BoxFit.cover,),
+                  child: Image.asset('./assets/images/dart6.jpeg',height: double.infinity, fit: BoxFit.cover,),
                 ),
               ),
 

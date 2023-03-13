@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/features/auth/auth_screen.dart';
 import 'package:nodejs/screens/home/home.dart';
-import 'package:nodejs/screens/home/post_screen.dart';
+import 'package:nodejs/screens/home/post/airline/airline.dart';
+import 'package:nodejs/screens/home/post/bus_ticket/cart_screen.dart';
+import 'package:nodejs/screens/home/post/bus_ticket/masori_grid.dart';
+import 'package:nodejs/screens/home/post/post_screen.dart';
 import 'package:nodejs/screens/wallet/agent.dart';
 import 'package:nodejs/screens/wallet/banking/banking.dart';
 import 'package:nodejs/screens/wallet/banking/internet.dart';
@@ -73,6 +76,15 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case ("/post"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const BookingScreen());
+    case ("/post1"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const ScreenMasonryGrid());
+    case ("/cart"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const CartScreen());
+    case ("/airline"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const ScreenAirlineGrid());
 
     default:
       return MaterialPageRoute(

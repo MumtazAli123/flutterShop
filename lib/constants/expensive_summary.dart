@@ -4,7 +4,6 @@ import 'package:nodejs/api/data/expensive_data.dart';
 import 'package:nodejs/sqlflite/date_time_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 
 class ExpensiveSummary extends StatelessWidget {
   final DateTime startOfWeek;

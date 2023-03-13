@@ -37,7 +37,7 @@ class _ScreenInput4DigitState extends State<ScreenInput4Digit> {
             padding: const EdgeInsets.all(10),
             height: 100,
             child: const CircleAvatar(
-              backgroundImage: AssetImage('./assets/images/dart.jpeg'),
+              backgroundImage: AssetImage('./assets/images/dart1.jpeg'),
             ),
           ),
           _buildLoginButton(),

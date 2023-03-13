@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/sindhi/Desktop/nodejs/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FMDB.build/DerivedSources/FMDB_vers.c
+  /Users/sindhi/Desktop/firebase/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FMDB.build/DerivedSources/FMDB_vers.c

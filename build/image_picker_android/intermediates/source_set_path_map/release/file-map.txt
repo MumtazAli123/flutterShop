@@ -10,10 +10,10 @@ io.flutter.plugins.imagepicker.image_picker_android-jetified-activity-1.6.1-8 /U
 io.flutter.plugins.imagepicker.image_picker_android-jetified-savedstate-1.2.0-9 /Users/sindhi/.gradle/caches/transforms-3/b921f06f777830f7c91443a74eacdbaf/transformed/jetified-savedstate-1.2.0/res
 io.flutter.plugins.imagepicker.image_picker_android-main-10 /Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_android-0.8.5+9/android/src/main/res
 io.flutter.plugins.imagepicker.image_picker_android-release-11 /Users/sindhi/.pub-cache/hosted/pub.dev/image_picker_android-0.8.5+9/android/src/release/res
-io.flutter.plugins.imagepicker.image_picker_android-packaged_res-12 /Users/sindhi/Desktop/nodejs/nodejs/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
-io.flutter.plugins.imagepicker.image_picker_android-pngs-13 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/generated/res/pngs/release
-io.flutter.plugins.imagepicker.image_picker_android-resValues-14 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/generated/res/resValues/release
-io.flutter.plugins.imagepicker.image_picker_android-rs-15 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/generated/res/rs/release
-io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-16 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
-io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-17 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-io.flutter.plugins.imagepicker.image_picker_android-merged_res-18 /Users/sindhi/Desktop/nodejs/nodejs/build/image_picker_android/intermediates/merged_res/release
+io.flutter.plugins.imagepicker.image_picker_android-packaged_res-12 /Users/sindhi/Desktop/firebase/nodejs/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
+io.flutter.plugins.imagepicker.image_picker_android-pngs-13 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/generated/res/pngs/release
+io.flutter.plugins.imagepicker.image_picker_android-resValues-14 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/generated/res/resValues/release
+io.flutter.plugins.imagepicker.image_picker_android-rs-15 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/generated/res/rs/release
+io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-16 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-17 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.imagepicker.image_picker_android-merged_res-18 /Users/sindhi/Desktop/firebase/nodejs/build/image_picker_android/intermediates/merged_res/release

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/sindhi/Desktop/nodejs/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/DerivedSources/path_provider_foundation_vers.c
+  /Users/sindhi/Desktop/firebase/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/DerivedSources/path_provider_foundation_vers.c

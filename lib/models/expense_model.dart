@@ -8,5 +8,4 @@ class ExpensiveItem {
     required this.amount,
     required this.dateTime,
   });
-
 }

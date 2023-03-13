@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		Ex9ELNAcA0DJtYJqRjWjazGyh7Y=
+		BNQA9VjmsiAM1UI8fO0HfX/93Mo=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		dEwk5m3cWHNmROkgkETiC7Iyuxo=
+		wJ1lr+Td90gcFgltYyEzeHT1xso=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,15 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		ovs8XnTtnWHuX0PU8iR6zF9/buA=
+		BdrLA2LuOWlTDs2amaHrpn+gyR8=
+		</data>
+		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
+		<data>
+		qICIcvvuDZwZlNROfgYH3ZqIxuU=
+		</data>
+		<key>flutter_assets/assets/images/Peoples.jpeg</key>
+		<data>
+		b75WtvNwQLstK6OleczbPQDSA6E=
 		</data>
 		<key>flutter_assets/assets/images/airline.jpeg</key>
 		<data>
@@ -48,6 +56,14 @@
 		<data>
 		yFKhvmnNGAJk42N4bvrGhWf71/g=
 		</data>
+		<key>flutter_assets/assets/images/peepholes.jpeg</key>
+		<data>
+		yAx/esr3RBFCfjYmnG0SfOvdPUA=
+		</data>
+		<key>flutter_assets/assets/images/peoples.gif</key>
+		<data>
+		tuwUWDf40751NqgADnr3M+5fMoc=
+		</data>
 		<key>flutter_assets/assets/images/telenor.png</key>
 		<data>
 		DlYQPLWqZJ5D4pAC9G3JQkwj+HA=
@@ -70,7 +86,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		aRaE5n68PibIKC5qaMwkeuiKkSw=
+		M8/9fd1c/OesCB8E0m91JaWlIhw=
 		</data>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -151,14 +167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b+1i5XrCyhD0YtSzhW5aqC0BKTwUDtELAcLnK3cyosk=
+			91A0AUNKFgi/JviMvPLyHY01YU5Q8cYJwShJ1q2yJqs=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bccC9/4uEzWc2smIv5wggDEz77PCP7tuCB9fGj6h3k=
+			GeWT4ouQ4S2Q0YMn1I+TFdXG52WVI8tts6hATA8AcJI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -172,7 +188,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQrXQgh2NRFD2R3HLoxt5jA7E0vvQ/zrlKuBG2KFD2s=
+			PhNhKkG9HlcFLUknUhY10p60l330/1N6i7GxSMN2wgE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Daewoo.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SCPEb6/rQadLJypSYgFy90izzvAy/r3UcBqnELQMECU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Peoples.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSRs1SmGfoKikI9SRZf6wLqvodVy22+SjqZ6JxCozd4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/airline.jpeg</key>
@@ -217,6 +247,20 @@
 			BRVDMeV0B2qxQdFiCti6R/unMU1zeZWLjAXKPmMq3fo=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/peepholes.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tJEg1w1S4MLhpo+pm9sJe+cuEca6eegnO06PiGd+jzk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/peoples.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tc0O6s/RtRlpisb9FPiyZYMRMRZSsNRvQ+25YTEEoGo=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/telenor.png</key>
 		<dict>
 			<key>hash2</key>
@@ -256,7 +300,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MDhl0urL4MCOWwDIlQ2urFcLFSjDWqLEkwaQk4D5zSY=
+			HRm9jrMetAsbXcfEoNZPGDo4EG/TPGzkcze5K/0LLDk=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
