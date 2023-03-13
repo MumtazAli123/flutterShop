@@ -4,7 +4,6 @@ import 'package:nodejs/models/photo.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 import 'dart:async';
 import 'dart:io' as io;
-import 'package:path_provider/path_provider.dart';
 
 class SQLHelper {
   static Database? _db;
