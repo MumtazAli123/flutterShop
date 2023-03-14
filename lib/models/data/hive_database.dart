@@ -122,4 +122,9 @@ class HiveDataBase {
     await dbClient!.insert('cart', cart.toMap());
     return cart;
   }
+  Future<List<Cart Function(Map res)>> getCartList()async{
+    var dbClient = await db;
+    final List<Map<String, Object?>> queryResult = await dbClient!.query('Cart');
+    return queryResult.map((e) => Cart.fromMap).toList();
+  }
 }

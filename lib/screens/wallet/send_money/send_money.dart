@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nodejs/screens/wallet/send_money/widget/panel_widget.dart';
-import 'package:nodejs/screens/wallet/widget/icon_avatar.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class SendMoneyScreen extends StatelessWidget {
@@ -8,7 +7,7 @@ class SendMoneyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    IconsAvatarScreen db = const IconsAvatarScreen();
+    // IconsAvatarScreen db = const IconsAvatarScreen();
     return  Scaffold(
       appBar: _buildAppBar(),
       body: _buildBody(),

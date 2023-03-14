@@ -9,6 +9,7 @@ import 'hive_database.dart';
 
 class ExpensiveDataModel extends ChangeNotifier{
   DBHelper dbHelper = DBHelper();
+  HiveDataBase dataBase = HiveDataBase();
   List<ExpensiveItem> overAllExpenseList = [];
 //  get expensive list
   List<ExpensiveItem> getAllExpensiveList() {
@@ -117,9 +118,9 @@ class ExpensiveDataModel extends ChangeNotifier{
   late Future<List<Cart>> _cart;
   Future<List<Cart>> get cart => _cart;
 
-  Future<DBHelper> getData ()async{
-    _cart.toString();
-    return dbHelper;
+  Future<Future<List<Cart>>> getData ()async{
+    _cart = dataBase.getCartList() as Future<List<Cart>>;
+    return _cart;
   }
 
   int _counter = 0;
