@@ -20,8 +20,7 @@ import '../screens/wallet/banking/nolcard.dart';
 import '../screens/wallet/input4digit.dart';
 import '../screens/wallet/mobile/jazz/jazz.dart';
 import '../screens/wallet/send_money/send_money.dart';
-import 'dart:async';
-import 'dart:io';
+
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
