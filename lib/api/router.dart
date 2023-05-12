@@ -5,6 +5,7 @@ import 'package:nodejs/screens/home/post/airline/airline.dart';
 import 'package:nodejs/screens/home/post/bus_ticket/cart_screen.dart';
 import 'package:nodejs/screens/home/post/bus_ticket/masori_grid.dart';
 import 'package:nodejs/screens/home/post/post_screen.dart';
+import 'package:nodejs/screens/home/post/sliding/sliding_up.dart';
 import 'package:nodejs/screens/wallet/agent.dart';
 import 'package:nodejs/screens/wallet/banking/banking.dart';
 import 'package:nodejs/screens/wallet/banking/internet.dart';
@@ -84,6 +85,9 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
     case ("/cart"):
       return MaterialPageRoute(
           settings: routeSettings, builder: (_) => const CartScreen());
+    case ("/sliding"):
+      return MaterialPageRoute(
+          settings: routeSettings, builder: (_) => const SlidingUpFolding());
 
     case ("/airline"):
       return MaterialPageRoute(

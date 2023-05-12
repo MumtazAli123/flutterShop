@@ -170,6 +170,11 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     return AppBar(
       backgroundColor: Colors.green,
       centerTitle: true,
+      actions: [
+        IconButton(onPressed: (){
+          Navigator.pushNamed(context, '/sliding');
+        }, icon: const Icon(Icons.home))
+      ],
       leading: IconButton(
           onPressed: () {
             Navigator.pushNamed(context, AuthScreen.routeName);

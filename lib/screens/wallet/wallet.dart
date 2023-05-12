@@ -12,38 +12,46 @@ class WalletScreen extends StatefulWidget {
   State<WalletScreen> createState() => _WalletScreenState();
 }
 
-class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMixin {
+class _WalletScreenState extends State<WalletScreen>
+    with TickerProviderStateMixin {
   bool _visible = true;
   late TabController _tabController;
   @override
-  void initState() {;
+  void initState() {
+    ;
     super.initState();
     _tabController = TabController(length: 4, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
       drawer: const SideBarScreen(),
       backgroundColor: Colors.green,
       appBar: _buildAppBar(),
       body: _buildBody(),
     );
   }
-  _buildAppBar(){
+
+  _buildAppBar() {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0.0,
       title: const Text(' PaySaw Wallet'),
       actions: [
-        IconButton(onPressed: (){
-          Navigator.of(context).pop();
-          Utils.snackBar1('Account was logout ', context);
-        }, icon: const Icon(Icons.cancel))
+        IconButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              Utils.snackBar1('Account was logout ', context);
+            },
+            icon: const Icon(Icons.cancel))
       ],
     );
   }
-  _buildBody(){
-    return  Center(
+
+  _buildBody() {
+    return Center(
       child: Column(
         children: [
           const ListTile(
@@ -53,11 +61,12 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
               ),
             ),
             title: Text(
-              'Bha Imran Ali', style: TextStyle(color: Colors.white) ,
+              'Bha Imran Ali',
+              style: TextStyle(color: Colors.white),
             ),
-            subtitle: Text('0300 32** *26',  style: TextStyle(color: Colors.white) ),
-            trailing:  Icon(Icons.heat_pump_rounded),
-
+            subtitle:
+                Text('0300 32** *26', style: TextStyle(color: Colors.white)),
+            trailing: Icon(Icons.heat_pump_rounded),
 
             // tileColor: Vx.white,
           ),
@@ -66,53 +75,68 @@ class _WalletScreenState extends State<WalletScreen> with TickerProviderStateMix
       ),
     );
   }
-  _buildClipRRect(){
-    return   ClipRRect(
-      borderRadius:  const BorderRadius.only(
-        topLeft: Radius.circular(50),
-        topRight: Radius.circular(50)),
-      child:  Container(
-      height: double.infinity,
-      width: double.infinity,
-      color: Colors.white,
-      child:  SizedBox(
-          child: VStack([
-            _buildTabBar(),
 
-            ListTile(
-              leading: const Icon(Icons.wallet, color: Colors.blue,),
+  _buildClipRRect() {
+    return ClipRRect(
+      borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(50), topRight: Radius.circular(50)),
+      child: Container(
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.white,
+        child: SizedBox(
+            child: VStack([
+          _buildTabBar(),
+          ListTile(
+              leading: const Icon(
+                Icons.wallet,
+                color: Colors.blue,
+              ),
               title: Visibility(
                 visible: _visible,
-                child: const Text('3099.00', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
-
+                child: const Text(
+                  '3099.00',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
               ),
               subtitle: const Text('Balance'),
               trailing: TextButton(
-                onPressed: (){
+                onPressed: () {
                   setState(() {
                     _visible = !_visible;
                   });
-                }, child: const Icon(Icons.visibility),
+                },
+                child: const Icon(Icons.visibility),
               )),
-            const SizedBox(height: 10,),
-            const Divider(),
-            const SizedBox(height: 10,),
-            _buildIconsAvatar(),
-          ])),
-    ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Divider(),
+          const SizedBox(
+            height: 10,
+          ),
+          _buildIconsAvatar(),
+          const SizedBox(
+            height: 10,
+          ),
+          const Divider(),
+        ])),
+      ),
     ).expand();
   }
 
-  _buildTabBar(){
+  _buildTabBar() {
     return ScreenTabBar(controller: _tabController);
   }
 
-  void togglePassword(){
+  void togglePassword() {
     _visible = !_visible;
     setState(() {});
   }
-  _buildIconsAvatar(){
-    return const Expanded(child: Column(
+
+  _buildIconsAvatar() {
+    return const Expanded(
+        child: Column(
       children: [
         IconsAvatarScreen(),
       ],

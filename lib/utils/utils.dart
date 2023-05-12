@@ -108,6 +108,8 @@ class Utils {
   }
 
   static slidingUpPanel(BuildContext context, String body, String appbar) {
-    return SlidingUpPanel();
+    return SlidingUpPanel(
+      body: const Column(),
+    );
   }
 }
