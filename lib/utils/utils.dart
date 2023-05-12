@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:sweetsheet/sweetsheet.dart';
 
+import '../widgets/input_widget.dart';
+
 class Utils {
   // ignore: constant_identifier_names
   static const String IMG_KEY = 'IMAGE_KAY';
@@ -115,25 +117,54 @@ class Utils {
   }
 
  static buildSheet (){
+    return const BuildBottomSheet();
+ }
+
+}
+
+class BuildBottomSheet extends StatefulWidget {
+  const BuildBottomSheet({Key? key}) : super(key: key);
+
+  @override
+  State<BuildBottomSheet> createState() => _BuildBottomSheetState();
+}
+
+class _BuildBottomSheetState extends State<BuildBottomSheet> {
+TextEditingController textEditingController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Send Money'),),
       body:  ListView(
         children:    [
+          const SizedBox(height: 20,),
           Card(elevation: 4,
             // color: Colors.orange,
-            child: ListTile(splashColor: Colors.green,
+            child: ListTile(
               onTap: (){
-              // Navigator.pop(context as BuildContext);
+                Utils.popupAwesome(context, Column(
+                  children: [
+                    CustomTextField(
+                        controller: textEditingController,
+                        icon: Icons.gas_meter,
+                        hintText: 'Enter Acc Mobile Number',
+                        keyBordType: TextInputType.number),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                  ],
+                ), (){});
               },
-              title: const Text('Cash'),
-              leading: const CircleAvatar( backgroundImage: AssetImage('assets/images/cash.jpeg'),
-              )
+                splashColor: Colors.green,
+                title: const Text('Send Cash'),
+                leading: const CircleAvatar( backgroundImage: AssetImage('assets/images/cash.jpeg'),
+                )
 
             ),
           )
         ],
       ),
     );
- }
-
+  }
 }
