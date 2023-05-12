@@ -1,4 +1,3 @@
-import 'dart:js';
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
@@ -124,7 +123,7 @@ class Utils {
             // color: Colors.orange,
             child: ListTile(splashColor: Colors.green,
               onTap: (){
-              Navigator.pop(context as BuildContext);
+              // Navigator.pop(context as BuildContext);
               },
               title: const Text('Cash'),
               leading: const CircleAvatar( backgroundImage: AssetImage('assets/images/cash.jpeg'),
