@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:googleapis/adsense/v2.dart';
 import 'package:googleapis/servicemanagement/v1.dart';
 import 'package:googleapis/shared.dart';
+import 'package:nodejs/screens/wallet/widget/icon_avatar.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:sweetsheet/sweetsheet.dart';
 
@@ -118,6 +119,13 @@ class Utils {
   }
 
  static buildSheet (){
-    return Container();
+    return Scaffold(
+      appBar: AppBar(title: const Text('Send Money'),),
+      body: const Column(
+        children: [
+          
+        ],
+      ),
+    );
  }
 }

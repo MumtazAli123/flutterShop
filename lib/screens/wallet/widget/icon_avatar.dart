@@ -53,7 +53,9 @@ class IconsAvatarScreen extends StatelessWidget {
                       () {});
             }),
             _buildIconsAvatar('Send', Icons.send, () {
-              showModalBottomSheet(context: context, builder: (context){
+              showModalBottomSheet(
+                  enableDrag: true,
+                  context: context, builder: (context){
                 return Utils.buildSheet();
               });
               // Navigator.pushNamed(context, '/send_money');
