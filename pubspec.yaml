@@ -44,6 +44,7 @@ dependencies:
   awesome_dialog: ^3.0.2
   shared_preferences: ^2.0.17
   sliding_up_panel: ^2.0.0
+  sweetsheet: ^0.4.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   fl_chart: ^0.61.0
@@ -52,6 +53,7 @@ dependencies:
   flutter_staggered_grid_view: ^0.6.2
   badges: ^3.0.1
   web_socket_channel: ^2.3.0
+  bottom_sheet: ^3.1.2
 
 dev_dependencies:
   flutter_test:

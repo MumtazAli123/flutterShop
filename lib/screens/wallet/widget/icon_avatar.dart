@@ -53,7 +53,10 @@ class IconsAvatarScreen extends StatelessWidget {
                       () {});
             }),
             _buildIconsAvatar('Send', Icons.send, () {
-              Navigator.pushNamed(context, '/send_money');
+              showModalBottomSheet(context: context, builder: (context){
+                return Utils.buildSheet();
+              });
+              // Navigator.pushNamed(context, '/send_money');
             }),
             _buildIconsAvatar('TopUp', Icons.hourglass_top, () {
               Navigator.pushNamed(context, '/wallet_topUp');
