@@ -1,4 +1,4 @@
-#Sun Mar 12 03:37:02 PKT 2023
+#Thu May 11 21:41:46 PKT 2023
 base.0=/Users/sindhi/Desktop/firebase/nodejs/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

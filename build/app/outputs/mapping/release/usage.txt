@@ -3128,6 +3128,7 @@ io.flutter.app.FlutterPluginRegistry$FlutterRegistrar
 io.flutter.app.FlutterPluginRegistry
 io.flutter.embedding.android.AndroidTouchProcessor$PointerChange
 io.flutter.embedding.android.AndroidTouchProcessor$PointerDeviceKind
+io.flutter.embedding.android.AndroidTouchProcessor$PointerPreferredStylusAuxiliaryAction
 io.flutter.embedding.android.AndroidTouchProcessor$PointerSignalKind
 io.flutter.embedding.android.AndroidTouchProcessor:
     static final int BYTES_PER_FIELD
@@ -3296,6 +3297,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_ENABLE_DART_PROFILING
     public static final java.lang.String ARG_ENABLE_IMPELLER
     public static final java.lang.String ARG_ENABLE_SOFTWARE_RENDERING
+    public static final java.lang.String ARG_ENABLE_VULKAN_VALIDATION
     public static final java.lang.String ARG_ENDLESS_TRACE_BUFFER
     public static final java.lang.String ARG_KEY_CACHE_SKSL
     public static final java.lang.String ARG_KEY_DART_FLAGS
@@ -3304,6 +3306,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_KEY_ENABLE_DART_PROFILING
     public static final java.lang.String ARG_KEY_ENABLE_IMPELLER
     public static final java.lang.String ARG_KEY_ENABLE_SOFTWARE_RENDERING
+    public static final java.lang.String ARG_KEY_ENABLE_VULKAN_VALIDATION
     public static final java.lang.String ARG_KEY_ENDLESS_TRACE_BUFFER
     public static final java.lang.String ARG_KEY_MSAA_SAMPLES
     public static final java.lang.String ARG_KEY_OBSERVATORY_PORT
@@ -3377,7 +3380,6 @@ io.flutter.embedding.engine.loader.FlutterLoader:
     private static final java.lang.String DEFAULT_KERNEL_BLOB
     private static final java.lang.String DEFAULT_LIBRARY
     private static final java.lang.String ENABLE_IMPELLER_META_DATA_KEY
-    private static final java.lang.String ENABLE_SKPARAGRAPH_META_DATA_KEY
     static final java.lang.String FLUTTER_ASSETS_DIR_KEY
     static final java.lang.String ISOLATE_SNAPSHOT_DATA_KEY
     private static final java.lang.String LEAK_VM_META_DATA_KEY

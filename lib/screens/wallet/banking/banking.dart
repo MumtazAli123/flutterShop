@@ -42,7 +42,7 @@ class _BankingScreenState extends State<BankingScreen> {
     return  Center(
       child: Column(
         children: [
-          Text('data'),
+          const Text('data'),
           ListTile(
             title: Text(fetchData() as String)
           )

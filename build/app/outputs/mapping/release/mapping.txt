@@ -3,8 +3,8 @@
 # min_api: 16
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.1"}
-# pg_map_id: f48cc0d
-# pg_map_hash: SHA-256 f48cc0d8aa9e127ca189c0a5eb587d3be64f2fe459ba9674d7908c8b8bf43475
+# pg_map_id: 412ea28
+# pg_map_hash: SHA-256 412ea285851df05593e9d6159f043fc62070495069c45745b1acba173fa652df
 androidx.activity.Cancellable -> androidx.activity.a:
 androidx.activity.ComponentActivity -> androidx.activity.c:
     java.util.concurrent.CopyOnWriteArrayList mOnMultiWindowModeChangedListeners -> g
@@ -4829,6 +4829,7 @@ io.flutter.plugins.imagepicker.ImagePickerDelegate$CameraDevice -> io.flutter.pl
     io.flutter.plugins.imagepicker.ImagePickerDelegate$CameraDevice REAR -> d
     io.flutter.plugins.imagepicker.ImagePickerDelegate$CameraDevice FRONT -> e
     io.flutter.plugins.imagepicker.ImagePickerDelegate$CameraDevice[] $VALUES -> f
+    io.flutter.plugins.imagepicker.ImagePickerDelegate$CameraDevice[] $values() -> a
 io.flutter.plugins.imagepicker.ImagePickerDelegate$FileUriResolver -> io.flutter.plugins.imagepicker.e$f:
     android.net.Uri resolveFileProviderUriForFile(java.lang.String,java.io.File) -> a
     void getFullImagePath(android.net.Uri,io.flutter.plugins.imagepicker.ImagePickerDelegate$OnPathReadyListener) -> b
@@ -4998,6 +4999,7 @@ io.flutter.plugins.pathprovider.Messages$StorageDirectory -> i0.h$c:
     io.flutter.plugins.pathprovider.Messages$StorageDirectory notifications -> j
     io.flutter.plugins.pathprovider.Messages$StorageDirectory podcasts -> g
     io.flutter.plugins.pathprovider.Messages$StorageDirectory ringtones -> h
+    io.flutter.plugins.pathprovider.Messages$StorageDirectory[] $values() -> a
 io.flutter.plugins.pathprovider.PathProviderPlugin -> i0.i:
     android.content.Context context -> a
     java.lang.String getTemporaryPath() -> a

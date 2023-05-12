@@ -23,28 +23,28 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			/mwcilvCcbnw51Mw0w6nOBw8n/o=
+			1VUuD7DBicCKw06CPIIrgyEc9lM=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"fe6c1c8a5bc271b9f0e75330d30ea7381c3c9ffa"</string>
+			<string>cdhash H"d5552e0fb0c189c08ac34e823c822b83211cf653"</string>
 		</dict>
 		<key>Frameworks/FMDB.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			GazciuqgpGFcB0U7zFedXfW/YoM=
+			MwCrP2fQ2MdReDo3pA4bn7HirMI=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"6046969ab78973f08dc5f4cd27da6f0ba4ee2e67" or cdhash H"19acdc8aeaa0a4615c07453bcc579d5df5bf6283"</string>
+			<string>cdhash H"b79ef0b07e690feb90a707b77fccf97f37a1f51c" or cdhash H"3300ab3f67d0d8c751783a37a40e1b9fb1e2acc2"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			vLXTsEjPkP5zdkYtxWyprWuBh1s=
+			SoTOB7vC7aazzh0aBV7WxvcT3d0=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"bcb5d3b048cf90fe7376462dc56ca9ad6b81875b"</string>
+			<string>cdhash H"4a84ce07bbc2eda6b3ce1d1a055ed6c6f713dddd"</string>
 		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
@@ -203,28 +203,28 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			wfF0bTiEYccYpunrC6Ud1+wrK9Y=
+			QSNpiq8eu/IsfUdHLo7no5qT3UU=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"c1f1746d388461c718a6e9eb0ba51dd7ec2b2bd6"</string>
+			<string>cdhash H"4123698aaf1ebbf22c7d47472e8ee7a39a93dd45"</string>
 		</dict>
 		<key>Frameworks/shared_preferences_foundation.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			36jVRFn7NJ+hDU/nGTWxZXmAdOg=
+			XG3VJTuA1lEG+OmYQUjRIfnqdFk=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"dfa8d54459fb349fa10d4fe71935b165798074e8"</string>
+			<string>cdhash H"5c6dd5253b80d65106f8e9984148d121f9ea7459"</string>
 		</dict>
 		<key>Frameworks/sqflite.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			sIG8llY/l7vWV8eq035nHHNnyWM=
+			d/K6f2mYS6+ENE4Mwc8btcz7LVk=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"b081bc96563f97bbd657c7aad37e671c7367c963"</string>
+			<string>cdhash H"77f2ba7f69984baf84344e0cc1cf1bb5ccfb2d59"</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
