@@ -3,8 +3,6 @@ import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:sweetsheet/sweetsheet.dart';
-
 import '../widgets/input_widget.dart';
 
 class Utils {
@@ -131,6 +129,7 @@ class BuildBottomSheet extends StatefulWidget {
 
 class _BuildBottomSheetState extends State<BuildBottomSheet> {
 TextEditingController textEditingController = TextEditingController();
+TextEditingController amountController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -147,12 +146,18 @@ TextEditingController textEditingController = TextEditingController();
                   children: [
                     CustomTextField(
                         controller: textEditingController,
-                        icon: Icons.gas_meter,
+                        icon: Icons.currency_bitcoin,
                         hintText: 'Enter Acc Mobile Number',
                         keyBordType: TextInputType.number),
                     const SizedBox(
                       height: 20,
                     ),
+                    CustomTextField(
+                        controller: amountController,
+                        icon: Icons.currency_bitcoin,
+                        hintText: 'Enter Amount',
+                        keyBordType: TextInputType.number),
+
                   ],
                 ), (){});
               },

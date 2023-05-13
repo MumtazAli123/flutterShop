@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		hpxmlgQeg43fahJ/HsHxSEG/sMw=
+		RyPzegGdc9h8UjdK4eQSsMl2BVM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		F35RBuA6gsLS9gBRYJACXAIcpbY=
+		ZCSUNPIucVS1w6VOXGsnO4O9uGU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		k0xCZalpqP9Ox6oCW3wFZrsDE3o=
+		M+/8vWSZqcY6NwE8xFF5qGlVshg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		khLJCOGxdtXW3swDIq1UAfes6z4=
+		64XPnhDfKucWiCafHB0ugQST5jI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -135,10 +135,6 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/images/airline.jpeg</key>
 		<data>
 		UZur4fhtCM6uEmx+6pav+oDer0M=
-		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/cash.jpeg</key>
-		<data>
-		zWdTKjay1V/Wh6x+pSe4LvjM1oY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
 		<data>
@@ -230,7 +226,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		M8VZzqCoAa1eFh5Y4Yzi33HuVUY=
+		tS/tWONifpJHHpNLddZ7t1dczbk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -533,7 +529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNC/+POcrq5qX+GABqZqaAjDIztR0AiJPILubYGdIzM=
+			zDQ4X/3grLDAN89FZ2cV9uwe0iNCv+3VV8fh4GISnRM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -547,21 +543,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/sUqXsvWsUenyRw29ynmvBXrdMjAijFF7aR8+vAjQ0E=
+			1RgPRmuO9Mz6WWsHo9eoaqtWT6BBhDYnE/4Iq3q3yUQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SOjkJxsrNBrIh27bPxlALInkLrtITw53WwwtbUrUkx4=
+			zdqwSlXwQ6OB0RJYm2jTx6UFaVaoxvZa7M7Iduf39d4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8FLfKLWTac1+dlfSi5b/R8ist9p8B04lHbgdp+TcSYY=
+			Dkxy+KS+k15L+dy0IQWhtmoyvAHZk5vkHgeEe6o1BNY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -688,13 +684,6 @@
 			<key>hash2</key>
 			<data>
 			ZuzCxpnOwJG/tnb0W/F/RkwZcVZLkPRPp0YJs1sIsBA=
-			</data>
-		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/cash.jpeg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			52sUmiHPoqPQw328GbNDYUCcVKFlQHHOdSVjVYiUOkY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/dart.jpeg</key>
@@ -855,7 +844,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2LsoW7yIN2bZ8o6k0ItZQSgmDNluivV4RmvnsCwpZ4=
+			D0agbA0LQUujYbfY7Bv5GqJ4AhzUl+Ay0V2xcrvKlHc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
