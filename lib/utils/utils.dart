@@ -3,7 +3,7 @@ import 'package:another_flushbar/flushbar_route.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import '../widgets/input_widget.dart';
+import '../screens/wallet/send_money/send_money.dart';
 
 class Utils {
   // ignore: constant_identifier_names
@@ -76,7 +76,7 @@ class Utils {
         )..show(context));
   }
 
-  static popupAwesome(BuildContext context, body, onTap) {
+  static  popupAwesome(BuildContext context, body, onTap) {
     return AwesomeDialog(
       context: context,
       animType: AnimType.bottomSlide,
@@ -115,61 +115,8 @@ class Utils {
   }
 
  static buildSheet (){
-    return const BuildBottomSheet();
+    return const SendMoneyScreen();
  }
-
 }
 
-class BuildBottomSheet extends StatefulWidget {
-  const BuildBottomSheet({Key? key}) : super(key: key);
 
-  @override
-  State<BuildBottomSheet> createState() => _BuildBottomSheetState();
-}
-
-class _BuildBottomSheetState extends State<BuildBottomSheet> {
-TextEditingController textEditingController = TextEditingController();
-TextEditingController amountController = TextEditingController();
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Send Money'),),
-      body:  ListView(
-        children:    [
-          const SizedBox(height: 20,),
-          Card(elevation: 4,
-            // color: Colors.orange,
-            child: ListTile(
-              onTap: (){
-                Utils.popupAwesome(context, Column(
-                  children: [
-                    CustomTextField(
-                        controller: textEditingController,
-                        icon: Icons.currency_bitcoin,
-                        hintText: 'Enter Acc Mobile Number',
-                        keyBordType: TextInputType.number),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    CustomTextField(
-                        controller: amountController,
-                        icon: Icons.currency_bitcoin,
-                        hintText: 'Enter Amount',
-                        keyBordType: TextInputType.number),
-
-                  ],
-                ), (){});
-              },
-                splashColor: Colors.green,
-                title: const Text('Send Cash'),
-                leading: const CircleAvatar( backgroundImage: AssetImage('assets/images/cash.jpeg'),
-                )
-
-            ),
-          )
-        ],
-      ),
-    );
-  }
-}

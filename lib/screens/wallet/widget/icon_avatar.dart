@@ -25,6 +25,13 @@ class IconsAvatarScreen extends StatelessWidget {
                   context,
                 Column(
                   children: [
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text('Load Mobile Balance'),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
