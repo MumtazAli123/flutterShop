@@ -57,7 +57,9 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                           hintText: 'Enter Amount',
                           keyBordType: TextInputType.number),
                     ],
-                  ), (){});
+                  ), (){
+                    Utils.snackBar('Sent Cash Successfully to your friends', context);
+                  });
                 },
                 splashColor: Colors.green,
                 title: const Text('Send Cash'),
@@ -90,7 +92,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                           hintText: 'Enter Amount',
                           keyBordType: TextInputType.number),
                     ],
-                  ), (){});
+                  ), (){Utils.snackBar('Sent Successfully ', context);});
                 },
                 splashColor: Colors.green,
                 title: const Text('Send to Internal Wallet'),
@@ -135,7 +137,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                           hintText: 'Enter Amount',
                           keyBordType: TextInputType.number),
                     ],
-                  ), (){});
+                  ), (){Utils.snackBar('Sent Successfully to bank ', context);});
                 },
                 splashColor: Colors.green,
                 title: const Text('Send to Bank'),
