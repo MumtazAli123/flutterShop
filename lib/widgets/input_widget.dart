@@ -22,12 +22,6 @@ class CustomTextField extends StatelessWidget {
         hintText: hintText,
         suffixStyle: const TextStyle(fontSize: 18),
         prefixIcon: Icon(icon),
-        // border: const OutlineInputBorder(
-        //     borderRadius: BorderRadius.all(Radius.circular(10)),
-        //     borderSide: BorderSide(color: Colors.black)),
-        // enabledBorder: const OutlineInputBorder(
-        //     borderRadius: BorderRadius.all(Radius.circular(10)),
-        //     borderSide: BorderSide(color: Colors.black)),
       ),
       // validator: (val) {},
     );
