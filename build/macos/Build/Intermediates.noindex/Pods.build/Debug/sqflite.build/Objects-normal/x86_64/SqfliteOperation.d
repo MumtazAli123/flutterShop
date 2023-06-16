@@ -1,9 +1,9 @@
 dependencies: \
-  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteOperation.m \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.8+2/macos/Classes/SqfliteOperation.m \
   /Users/sindhi/Desktop/firebase/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/sqflite.build/module.modulemap \
   /Users/sindhi/Desktop/firebase/nodejs/macos/Pods/Target\ Support\ Files/sqflite/sqflite-prefix.pch \
-  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteOperation.h \
-  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteImport.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.8+2/macos/Classes/SqfliteOperation.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.8+2/macos/Classes/SqfliteImport.h \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Modules/module.modulemap \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterViewController.h \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterTexture.h \
@@ -18,8 +18,8 @@ dependencies: \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacros.h \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterAppDelegate.h \
   /Users/sindhi/Documents/flutterDev/sdk/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacOS.h \
-  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqflitePlugin.h \
-  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.5/macos/Classes/SqfliteFmdbImport.m \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.8+2/macos/Classes/SqflitePlugin.h \
+  /Users/sindhi/.pub-cache/hosted/pub.dev/sqflite-2.2.8+2/macos/Classes/SqfliteFmdbImport.m \
   /Users/sindhi/Desktop/firebase/nodejs/macos/Pods/FMDB/src/fmdb/FMDB.h \
   /Users/sindhi/Desktop/firebase/nodejs/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FMDB.build/module.modulemap \
   /Users/sindhi/Desktop/firebase/nodejs/macos/Pods/FMDB/src/fmdb/FMDatabaseQueue.h \

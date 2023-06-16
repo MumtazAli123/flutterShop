@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.bin</key>
 		<data>
-		M+/8vWSZqcY6NwE8xFF5qGlVshg=
+		rqwgBtnyvFE3/6N1AyWVGBkN3DM=
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<data>
-		64XPnhDfKucWiCafHB0ugQST5jI=
+		mVVjd3P5VYlelMbhZY5D7qdqePo=
 		</data>
 		<key>Resources/flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/flutter_assets/NOTICES.Z</key>
 		<data>
-		+weLVQL48aPSjGWVj4Qa8yfSnr4=
+		IQWf3nm2qkT0S1bLlS8A8ZnvqkY=
 		</data>
 		<key>Resources/flutter_assets/assets/airline/airline.jpeg</key>
 		<data>
@@ -84,6 +84,14 @@
 		<data>
 		ukUrMdnL27StbiPKLOIY+fmA5Ks=
 		</data>
+		<key>Resources/flutter_assets/assets/images/bank.jpeg</key>
+		<data>
+		KnutAIDzUG+6ZfvjjNZAs/gHvWE=
+		</data>
+		<key>Resources/flutter_assets/assets/images/cash.jpeg</key>
+		<data>
+		zWdTKjay1V/Wh6x+pSe4LvjM1oY=
+		</data>
 		<key>Resources/flutter_assets/assets/images/dart.jpeg</key>
 		<data>
 		GV9eQ7+4IQhi1wtIQUZGy19cABI=
@@ -119,6 +127,10 @@
 		<key>Resources/flutter_assets/assets/images/jazz.png</key>
 		<data>
 		yFKhvmnNGAJk42N4bvrGhWf71/g=
+		</data>
+		<key>Resources/flutter_assets/assets/images/logo.jpg</key>
+		<data>
+		ezVop5oeYVh2WUttk/JOIZB1jY4=
 		</data>
 		<key>Resources/flutter_assets/assets/images/peoples.gif</key>
 		<data>
@@ -174,7 +186,7 @@
 		</data>
 		<key>Resources/flutter_assets/kernel_blob.bin</key>
 		<data>
-		7hNQw6zA6VR2Wg4XRDuaGT+4tPo=
+		bP6folmCLfWe/KSIdcThskz01TI=
 		</data>
 		<key>Resources/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>
 		<data>
@@ -262,14 +274,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zdqwSlXwQ6OB0RJYm2jTx6UFaVaoxvZa7M7Iduf39d4=
+			mzdqGVlueB7LYn66OxKLRGEq0IYLM5wFzo64Zdtvr+Q=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dkxy+KS+k15L+dy0IQWhtmoyvAHZk5vkHgeEe6o1BNY=
+			LdfU0Biotd6YJsX2cLv1WYbaF4rZtSByCd43jacKhhY=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/FontManifest.json</key>
@@ -283,7 +295,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ohLl+GDF/O5OcvEGtahV5OwoHCDGacvSMIfd1pfcuX8=
+			y/NGs6UV/FNhnunmn7P/qVo/SxLkSPM2ykeEtdUf3Rs=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/assets/airline/airline.jpeg</key>
@@ -391,6 +403,20 @@
 			vUdz4rXQO1o9TUGQn4LsRBEtW9lNzaoMvUHh7c5l674=
 			</data>
 		</dict>
+		<key>Resources/flutter_assets/assets/images/bank.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fkZdo8d1yy1Yaa7S0a+DHVRyeAmCIz5kgHkZnxGrFco=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/cash.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			52sUmiHPoqPQw328GbNDYUCcVKFlQHHOdSVjVYiUOkY=
+			</data>
+		</dict>
 		<key>Resources/flutter_assets/assets/images/dart.jpeg</key>
 		<dict>
 			<key>hash2</key>
@@ -452,6 +478,13 @@
 			<key>hash2</key>
 			<data>
 			BRVDMeV0B2qxQdFiCti6R/unMU1zeZWLjAXKPmMq3fo=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/logo.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eeKzRlvfyXypqYkahfWlNHIDnOaO/UBcy1ENiGnFBtw=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/assets/images/peoples.gif</key>
@@ -549,7 +582,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nVQ2iZfGIMf5raopMG9ladKefBeLdPdkbp8W4VXcEIk=
+			bx+KwCFp2PeMZqNJdDFinW3cjS7k4pvC5u6rKvFHGnU=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/packages/awesome_dialog/assets/flare/error.flr</key>

@@ -7,7 +7,12 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="33" />
-    <!-- <use-permission android:name="android.permission.QUERY_ALL_PACKAGES"/> -->
+
+    <permission
+        android:name="com.example.nodejs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.nodejs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- <use-permission android:name="android.permission.QUERY_ALL_PACKAGES"/> -->
     <application
         android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"

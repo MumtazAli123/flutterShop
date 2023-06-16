@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "io.flutter.plugins.imagepicker.image_picker_android-merged_res-17:/values-te/values-te.xml",
+            "outputFile": "io.flutter.plugins.imagepicker.image_picker_android-merged_res-18:/values-te/values-te.xml",
             "map": [
                 {
-                    "source": "/Users/sindhi/.gradle/caches/transforms-3/0e46fa582276d6a878d0bf00e77184ea/transformed/core-1.8.0/res/values-te/values-te.xml",
+                    "source": "/Users/sindhi/.gradle/caches/transforms-3/2a40c978216a6213b76dded601643925/transformed/core-1.9.0/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-15:/values-te/values-te.xml",
+            "outputFile": "io.flutter.plugins.imagepicker.image_picker_android-mergeReleaseResources-16:/values-te/values-te.xml",
             "map": [
                 {
-                    "source": "/Users/sindhi/.gradle/caches/transforms-3/0e46fa582276d6a878d0bf00e77184ea/transformed/core-1.8.0/res/values-te/values-te.xml",
+                    "source": "/Users/sindhi/.gradle/caches/transforms-3/2a40c978216a6213b76dded601643925/transformed/core-1.9.0/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
